@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Welding Techniques - StickWeldPro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/tab-indicator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>StickWeld<span>Pro</span></h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="techniques.html" class="active">Techniques</a></li>
+                    <li><a href="electrodes.html">Electrodes</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                    <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="practice.html">Practice Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Stick Welding Techniques</h1>
+        <ul class="breadcrumbs">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="techniques.html">Techniques</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <!-- JS will populate this -->
+        </div>
+
+        <h2 id="electrode-manipulation">Electrode Manipulation</h2>
+        
+        <p>The way you manipulate your electrode dramatically affects weld quality, appearance, and properties. Mastering these techniques takes practice, but understanding the theory will accelerate your learning.</p>
+        
+        <h3 id="electrode-angles">Electrode Angles</h3>
+        
+        <div class="diagram-container">
+            <img src="../images/electrode-angles.svg" alt="Electrode Angle Diagram">
+            <figcaption>Work angle and travel angle in stick welding</figcaption>
+        </div>
+        
+        <p>Two angles are critical in stick welding:</p>
+        
+        <ul>
+            <li><strong>Work Angle</strong>: The angle between the electrode and the work surface perpendicular to the weld line</li>
+            <li><strong>Travel Angle</strong>: The angle between the electrode and the work surface parallel to the weld line</li>
+        </ul>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Joint Type</th>
+                        <th>Work Angle</th>
+                        <th>Travel Angle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Butt Joint</td>
+                        <td>90°</td>
+                        <td>5-15° Drag</td>
+                    </tr>
+                    <tr>
+                        <td>T-Joint</td>
+                        <td>45°</td>
+                        <td>5-15° Drag</td>
+                    </tr>
+                    <tr>
+                        <td>Lap Joint</td>
+                        <td>60-70°</td>
+                        <td>5-15° Drag</td>
+                    </tr>
+                    <tr>
+                        <td>Corner Joint</td>
+                        <td>45°</td>
+                        <td>5-15° Drag</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="tip-box">
+            <p>A "drag" angle means the top of the electrode points back toward the already completed weld. This is the standard technique for stick welding (unlike TIG welding, which typically uses a push angle).</p>
+        </div>
+        
+        <h3 id="motion-patterns">Motion Patterns</h3>
+        
+        <p>Different electrode motion patterns serve specific purposes:</p>
+        
+        <h4>Straight/Stringer Bead</h4>
+        <ul>
+            <li>No side-to-side motion</li>
+            <li>Provides deepest penetration</li>
+            <li>Used for root passes and thin materials</li>
+            <li>Fastest travel speed</li>
+        </ul>
+        
+        <h4>Weave Patterns</h4>
+        
+        <p>Weave patterns introduce side-to-side motion to control heat input, widen the bead, and address specific welding needs:</p>
+        
+        <div class="technique-grid">
+            <div class="technique-item">
+                <h5>J-Weave</h5>
+                <p>Motion resembles writing the letter J, pausing at the top of each motion. Good for vertical-up welding.</p>
+            </div>
+            <div class="technique-item">
+                <h5>C-Weave</h5>
+                <p>Motion resembles writing the letter C. Used for wide coverage and good tie-in to the sidewalls.</p>
+            </div>
+            <div class="technique-item">
+                <h5>Zigzag</h5>
+                <p>Simple side-to-side motion. Fast and efficient for covering area with consistent heat input.</p>
+            </div>
+            <div class="technique-item">
+                <h5>Box/Square Weave</h5>
+                <p>Motion traces a box pattern. Excellent for controlling heat and ensuring sidewall fusion.</p>
+            </div>
+            <div class="technique-item">
+                <h5>Crescent/Half-Moon</h5>
+                <p>Motion traces half-moon shapes. Good for wide beads and controlling penetration profile.</p>
+            </div>
+            <div class="technique-item">
+                <h5>Triangle/Christmas Tree</h5>
+                <p>Motion traces triangle shapes. Excellent for vertical-up welding to control the molten pool.</p>
+            </div>
+        </div>
+        
+        <div class="note-box">
+            <p>When using weave patterns, the maximum width should generally not exceed 3 times the electrode diameter. Wider weaves can lead to poor fusion, slag inclusions, and porosity.</p>
+        </div>
+        
+        <h3 id="arc-length">Arc Length Control</h3>
+        
+        <p>Arc length is the distance between the electrode tip and the base metal. It directly affects penetration, bead appearance, and weld quality:</p>
+        
+        <ul>
+            <li><strong>Short Arc</strong>: Arc length equal to or less than the electrode diameter
+                <ul>
+                    <li>Deeper penetration</li>
+                    <li>Narrower bead</li>
+                    <li>Less voltage drop</li>
+                    <li>May cause electrode sticking</li>
+                </ul>
+            </li>
+            <li><strong>Medium Arc</strong>: Arc length 1-1.5 times electrode diameter
+                <ul>
+                    <li>Balanced penetration and bead width</li>
+                    <li>Good control</li>
+                    <li>Ideal for most applications</li>
+                </ul>
+            </li>
+            <li><strong>Long Arc</strong>: Arc length greater than 1.5 times electrode diameter
+                <ul>
+                    <li>Wider, flatter bead</li>
+                    <li>Reduced penetration</li>
+                    <li>Increased spatter</li>
+                    <li>Risk of porosity due to atmospheric contamination</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="warning-box">
+            <p>Arc blow can make arc length control difficult. If you experience magnetic arc blow (arc wandering), try changing your work clamp position, changing to AC current, or shortening your arc length.</p>
+        </div>
+
+        <h2 id="positional-welding">Positional Welding</h2>
+        
+        <p>Welding in different positions requires specific techniques to control the molten pool against gravity.</p>
+        
+        <h3 id="flat-position">Flat Position (1G/1F)</h3>
+        
+        <ul>
+            <li>Easiest position - gravity works with you</li>
+            <li>Weld joint is horizontal, welding from top</li>
+            <li>Highest travel speeds possible</li>
+            <li>Standard drag angle (5-15°)</li>
+            <li>Can use larger electrodes and higher amperage</li>
+        </ul>
+        
+        <div class="tip-box">
+            <p>In flat position, you can typically use the highest amperage settings within the electrode's range, which increases deposition rate and efficiency.</p>
+        </div>
+        
+        <h3 id="horizontal-position">Horizontal Position (2G/2F)</h3>
+        
+        <ul>
+            <li>Weld joint is vertical, welding horizontally</li>
+            <li>Gravity pulls the molten pool downward</li>
+            <li>Requires careful monitoring of the molten pool</li>
+            <li>Slight upward angle of electrode helps counter gravity</li>
+            <li>Faster travel speed than vertical, slower than flat</li>
+            <li>Medium to small electrode diameter</li>
+        </ul>
+        
+        <h4>2F Fillet Weld Technique:</h4>
+        <ul>
+            <li>Position electrode to direct more heat to the vertical member</li>
+            <li>Work angle around a 45° and slightly upward</li>
+            <li>Travel angle 5-15° drag</li>
+            <li>Slightly faster travel speed to prevent sagging</li>
+        </ul>
+        
+        <h4>2G Groove Weld Technique:</h4>
+        <ul>
+            <li>Position electrode perpendicular to the plates</li>
+            <li>Maintain consistent travel speed to prevent sagging</li>
+            <li>Consider a slight upward aim to counter gravity</li>
+            <li>Use whip or pause technique to allow solidification</li>
+        </ul>
+        
+        <h3 id="vertical-position">Vertical Position (3G/3F)</h3>
+        
+        <h4>Vertical-Up Welding:</h4>
+        <ul>
+            <li>Welding from bottom to top</li>
+            <li>Better penetration profile</li>
+            <li>Better slag control (slag flows away from the work area)</li>
+            <li>Slower travel speed</li>
+            <li>Step or weave pattern recommended</li>
+            <li>Reduced amperage (70-85% of flat position)</li>
+        </ul>
+        
+        <h4>Vertical-Down Welding:</h4>
+        <ul>
+            <li>Welding from top to bottom</li>
+            <li>Faster travel speed</li>
+            <li>Less penetration</li>
+            <li>Better for thin materials</li>
+            <li>Careful control needed to prevent lack of fusion</li>
+            <li>Generally not used for structural or code work</li>
+        </ul>
+        
+        <h4>Vertical Welding Techniques:</h4>
+        <ul>
+            <li><strong>Triangle/Christmas Tree</strong>: Excellent for vertical-up, controls the puddle effectively</li>
+            <li><strong>J-Weave</strong>: Good for vertical-up, pause at the top of each "J" to allow solidification</li>
+            <li><strong>Step-and-Pause</strong>: Move up a small distance, pause to solidify, repeat</li>
+            <li><strong>Whip</strong>: Quick up and down motion while progressing upward</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p>Reducing amperage is critical for vertical welding. Too much heat will cause the weld pool to run or drip, resulting in poor weld quality.</p>
+        </div>
+        
+        <h3 id="overhead-position">Overhead Position (4G/4F)</h3>
+        
+        <ul>
+            <li>Most difficult position - gravity works directly against you</li>
+            <li>Welding on the underside of a joint</li>
+            <li>Requires careful control of puddle size</li>
+            <li>Reduced amperage (70-80% of flat position)</li>
+            <li>Smaller electrode diameter</li>
+            <li>Faster travel speed to keep puddle small</li>
+            <li>Short arc length to maintain control</li>
+        </ul>
+        
+        <h4>Overhead Welding Techniques:</h4>
+        <ul>
+            <li>Use stringer beads or tight weave pattern</li>
+            <li>Keep puddle small (no larger than 3x electrode diameter)</li>
+            <li>Use whip technique to control puddle size</li>
+            <li>Maintain very short arc length</li>
+            <li>Position yourself for maximum stability and visibility</li>
+        </ul>
+        
+        <div class="safety-tip">
+            <p>Always wear complete protective gear for overhead welding, including a cap or head covering. Molten metal drops can cause severe burns.</p>
+        </div>
+
+        <h2 id="multi-pass-welding">Multi-Pass Welding Techniques</h2>
+        
+        <p>When welding thicker materials, multiple passes are required to build up the weld to proper size. Each pass has specific requirements and techniques.</p>
+        
+        <h3 id="root-pass">Root Pass</h3>
+        
+        <p>The root pass is the first pass that establishes fusion at the root of the joint:</p>
+        
+        <ul>
+            <li>Most critical pass - establishes foundation for entire weld</li>
+            <li>Requires complete penetration to the root</li>
+            <li>Typically done with smaller electrode (3/32" or 1/8")</li>
+            <li>Often uses E6010 or E6011 for deeper penetration</li>
+            <li>Requires precise control of arc length and angle</li>
+            <li>Usually a stringer bead (no weave) for maximum penetration</li>
+        </ul>
+        
+        <h4>Root Pass Technique:</h4>
+        <ol>
+            <li>Ensure proper root gap and alignment</li>
+            <li>Use amperage at higher end of electrode's range</li>
+            <li>Maintain short arc length</li>
+            <li>Watch for keyhole (if visible root gap exists)</li>
+            <li>Ensure tie-in to both sides of joint</li>
+            <li>Control puddle size with consistent travel speed</li>
+        </ol>
+        
+        <h3 id="hot-pass">Hot Pass</h3>
+        
+        <p>The hot pass is the second pass, applied directly over the root pass:</p>
+        
+        <ul>
+            <li>Applied while root pass is still warm (hence "hot" pass)</li>
+            <li>Cleans up and reinforces the root pass</li>
+            <li>Typically uses same or slightly larger electrode than root pass</li>
+            <li>Often done with E7018 for good toughness</li>
+            <li>Usually a stringer bead or very tight weave</li>
+            <li>Focus on good tie-in to the root pass and sidewalls</li>
+        </ul>
+        
+        <h3 id="fill-passes">Fill Passes</h3>
+        
+        <p>Fill passes build up the weld to near-final dimensions:</p>
+        
+        <ul>
+            <li>Multiple passes placed side by side and/or layered</li>
+            <li>Can use larger electrodes (1/8" to 5/32")</li>
+            <li>Usually E7018 or similar low-hydrogen electrode</li>
+            <li>May use weave techniques to control heat input and improve fusion</li>
+            <li>Each pass should be cleaned thoroughly before the next</li>
+            <li>Focus on consistent bead shape and good tie-in</li>
+        </ul>
+        
+        <h4>Fill Pass Sequencing:</h4>
+        <ul>
+            <li>For wide joints, weave or use multiple side-by-side stringers</li>
+            <li>Start each new pass on alternating sides when possible</li>
+            <li>Ensure complete fusion to previous passes and sidewalls</li>
+            <li>Control interpass temperature (typically below 350°F for carbon steel)</li>
+        </ul>
+        
+        <h3 id="cap-pass">Cap Pass</h3>
+        
+        <p>The cap pass is the final visible layer of the weld:</p>
+        
+        <ul>
+            <li>Determines final appearance of the weld</li>
+            <li>Usually same size or larger electrode as fill passes</li>
+            <li>Typically E7018 for structural work</li>
+            <li>Focus on appearance and proper weld profile</li>
+            <li>May use a weave to achieve proper width and contour</li>
+            <li>Should have slight crown (reinforcement) without excessive buildup</li>
+            <li>Ensure smooth transition to base metal without undercut</li>
+        </ul>
+        
+        <div class="tip-box">
+            <p>The cap pass should be slightly crowned (about 1/16" higher than the base metal) but not excessively reinforced. Too much reinforcement creates stress concentration points.</p>
+        </div>
+        
+        <h3 id="interpass-cleaning">Interpass Cleaning</h3>
+        
+        <p>Proper cleaning between passes is essential for quality multi-pass welds:</p>
+        
+        <ol>
+            <li>Allow weld to cool enough to solidify slag</li>
+            <li>Remove all slag with chipping hammer</li>
+            <li>Brush thoroughly with wire brush</li>
+            <li>Inspect for defects before proceeding</li>
+            <li>Remove any defects by grinding if necessary</li>
+            <li>Clean any ground areas</li>
+        </ol>
+        
+        <div class="warning-box">
+            <p>Never skip interpass cleaning. Trapped slag can lead to slag inclusions, one of the most common and serious weld defects.</p>
+        </div>
+
+        <h2 id="special-techniques">Special Techniques</h2>
+        
+        <h3 id="whip-technique">Whip Technique</h3>
+        
+        <p>The whip technique involves a rhythmic forward and backward motion of the electrode:</p>
+        
+        <ol>
+            <li>Establish normal arc</li>
+            <li>Move electrode forward in weld direction</li>
+            <li>Quickly pull back about 1/8" to 1/4" (but not out of the puddle)</li>
+            <li>Move forward again slightly ahead of previous position</li>
+            <li>Repeat in a rhythmic pattern</li>
+        </ol>
+        
+        <h4>Applications:</h4>
+        <ul>
+            <li>Control heat input in thin materials</li>
+            <li>Vertical and overhead welding</li>
+            <li>Creating evenly spaced ripple pattern</li>
+            <li>Works particularly well with E6010 and E6011 electrodes</li>
+            <li>Helpful for bridging gaps that are slightly too wide</li>
+        </ul>
+        
+        <h3 id="stacking-dimes">Stacking Dimes Technique</h3>
+        
+        <p>This technique creates a distinctive "stacked coin" appearance:</p>
+        
+        <ol>
+            <li>Create a small weld puddle</li>
+            <li>Allow it to solidify partially</li>
+            <li>Move forward slightly and create another puddle that overlaps the first</li>
+            <li>Repeat to create a series of overlapping "dimes"</li>
+        </ol>
+        
+        <h4>Applications:</h4>
+        <ul>
+            <li>Creates aesthetically pleasing welds</li>
+            <li>Provides good control in vertical welding</li>
+            <li>Helps control heat input</li>
+            <li>Often used in TIG welding but applicable to stick in some cases</li>
+        </ul>
+        
+        <h3 id="stringers-vs-weaves">Stringers vs. Weaves: When to Use Each</h3>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Technique</th>
+                        <th>Advantages</th>
+                        <th>Best Used For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Stringer Beads</td>
+                        <td>
+                            <ul>
+                                <li>Maximum penetration</li>
+                                <li>Better mechanical properties</li>
+                                <li>Faster travel speed</li>
+                                <li>Less heat input</li>
+                                <li>Less distortion</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Root passes</li>
+                                <li>Critical structural welds</li>
+                                <li>Thin materials</li>
+                                <li>High-strength applications</li>
+                                <li>Code work (often specified)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Weave Beads</td>
+                        <td>
+                            <ul>
+                                <li>Wider bead coverage</li>
+                                <li>Fewer passes for wide joints</li>
+                                <li>Better sidewall fusion</li>
+                                <li>Better for bridging gaps</li>
+                                <li>Control over puddle in position welding</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Cap passes</li>
+                                <li>Wide joints</li>
+                                <li>Positions other than flat</li>
+                                <li>When appearance is important</li>
+                                <li>Poorly fitted joints</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note-box">
+            <p>Many welding codes limit the maximum width of weave beads, typically to 3 times the electrode diameter. Always check applicable codes before choosing your technique.</p>
+        </div>
+        
+        <h3 id="skip-welding">Skip Welding</h3>
+        
+        <p>Skip welding (also called intermittent welding) places weld segments with gaps between them:</p>
+        
+        <ul>
+            <li>Reduces total heat input</li>
+            <li>Minimizes distortion in thin materials</li>
+            <li>Requires planning for segment length and spacing</li>
+            <li>Often used in non-critical applications where full strength isn't needed</li>
+            <li>Commonly specified as "2-6" meaning 2" of weld with 6" gaps</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p>Skip welding is not suitable for structural applications requiring full strength or for applications subject to fatigue, vibration, or corrosive environments.</p>
+        </div>
+
+        <h2 id="advanced-applications">Advanced Applications</h2>
+        
+        <h3 id="vertical-down">Vertical-Down Welding</h3>
+        
+        <p>While vertical-up welding is more common for structural applications, vertical-down has specific use cases:</p>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Higher travel speed than vertical-up</li>
+            <li>Electrode angle 15-20° from vertical</li>
+            <li>Focus on leading edge of puddle</li>
+            <li>Control puddle by maintaining consistent speed</li>
+            <li>Keep arc length short</li>
+        </ul>
+        
+        <h4>Applications:</h4>
+        <ul>
+            <li>Sheet metal (less than 3/16" thick)</li>
+            <li>Root passes in pipe in some applications</li>
+            <li>When speed is more important than maximum penetration</li>
+            <li>E6010, E6011, and E7014 work well for vertical-down</li>
+        </ul>
+        
+        <h3 id="open-root-welding">Open-Root Welding</h3>
+        
+        <p>Open-root welding requires special techniques to achieve full penetration without backing:</p>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Maintain visible keyhole at leading edge of puddle</li>
+            <li>Control keyhole size through travel speed and angle</li>
+            <li>Keyhole should be 2/3 the size of the electrode diameter</li>
+            <li>Rock or oscillate electrode to ensure fusion to both sides</li>
+            <li>Maintain short arc length</li>
+            <li>E6010 or E6011 electrodes are preferred</li>
+        </ul>
+        
+        <h4>Common Challenges:</h4>
+        <ul>
+            <li>Burn-through (puddle drops through opening)</li>
+            <li>Incomplete penetration (failure to achieve full fusion at root)</li>
+            <li>Concave root surface (excessive penetration)</li>
+            <li>Misalignment of root faces</li>
+        </ul>
+        
+        <h3 id="pipe-welding">Pipe Welding</h3>
+        
+        <p>Pipe welding combines multiple positions and techniques in a single joint:</p>
+        
+        <h4>Fixed Position Pipe (5G/6G):</h4>
+        <ul>
+            <li>5G: Pipe horizontal, not rotated during welding (positions vary around pipe)</li>
+            <li>6G: Pipe at 45° angle, not rotated (most challenging position)</li>
+            <li>Requires transitioning between flat, vertical, and overhead techniques</li>
+            <li>Often uses different techniques for different clock positions</li>
+        </ul>
+        
+        <h4>Rolled Position (1G):</h4>
+        <ul>
+            <li>Pipe rotated during welding (all welding done in flat position)</li>
+            <li>Faster and easier than fixed position</li>
+            <li>Requires pipe rollers or positioner</li>
+        </ul>
+        
+        <h4>Typical Pipe Joint Progression:</h4>
+        <ol>
+            <li>Root pass with E6010 (open root) or E7018 (with backing)</li>
+            <li>Hot pass with E7018</li>
+            <li>Fill passes with E7018</li>
+            <li>Cap pass with E7018</li>
+        </ol>
+        
+        <h3 id="cast-iron-welding">Cast Iron Welding</h3>
+        
+        <p>Cast iron presents special challenges due to its high carbon content and brittleness:</p>
+        
+        <h4>Techniques:</h4>
+        <ul>
+            <li><strong>Preheat</strong>: 500-1200°F depending on size and complexity</li>
+            <li><strong>Small Stringer Beads</strong>: Minimize heat input</li>
+            <li><strong>Peening</strong>: Hammer each pass while still hot to relieve stress</li>
+            <li><strong>Slow Cooling</strong>: Wrap in insulating blanket after welding</li>
+            <li><strong>Short Arc Length</strong>: Minimize atmospheric contamination</li>
+        </ul>
+        
+        <h4>Electrodes for Cast Iron:</h4>
+        <ul>
+            <li>ENi-CI (pure nickel): Most machinable, best for engine blocks</li>
+            <li>ESt (steel): Least expensive, harder but suitable for non-machined surfaces</li>
+            <li>ENiFe-CI (nickel-iron): Good compromise between machinability and cost</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p>Never quench or rapidly cool cast iron welds. This will cause cracking due to the formation of brittle structures in the heat-affected zone.</p>
+        </div>
+
+        <h2 id="efficiency-quality">Efficiency and Quality Techniques</h2>
+        
+        <h3 id="controlling-distortion">Controlling Distortion</h3>
+        
+        <p>Welding heat causes expansion and contraction that can warp workpieces. Control methods include:</p>
+        
+        <h4>Pre-Welding Techniques:</h4>
+        <ul>
+            <li><strong>Pre-Setting</strong>: Position parts with offset to compensate for expected distortion</li>
+            <li><strong>Proper Fixturing</strong>: Use jigs and clamps to resist movement</li>
+            <li><strong>Pre-Bending</strong>: Bend parts in opposite direction of expected distortion</li>
+            <li><strong>Balanced Welding Design</strong>: Place welds symmetrically when possible</li>
+        </ul>
+        
+        <h4>During Welding:</h4>
+        <ul>
+            <li><strong>Backstep Welding</strong>: Weld in segments in direction opposite to overall progression</li>
+            <li><strong>Skip Welding</strong>: Complete welds in non-sequential segments</li>
+            <li><strong>Balanced Welding Sequence</strong>: Alternate sides of the joint</li>
+            <li><strong>Low Heat Input</strong>: Use smallest practical electrode and amperage</li>
+            <li><strong>Faster Travel Speed</strong>: Reduces heat input per inch</li>
+        </ul>
+        
+        <h4>Post-Welding:</h4>
+        <ul>
+            <li><strong>Peening</strong>: Carefully hammer the weld while still hot (not for all applications)</li>
+            <li><strong>Stress Relief Heat Treatment</strong>: Controlled heating and cooling cycle</li>
+            <li><strong>Straightening</strong>: Mechanical or thermal methods to correct distortion</li>
+        </ul>
+        
+        <h3 id="increasing-speed">Increasing Efficiency</h3>
+        
+        <p>Professional welders use these techniques to improve productivity:</p>
+        
+        <ul>
+            <li><strong>Proper Amperage Selection</strong>: Higher amperage within acceptable range</li>
+            <li><strong>Larger Electrode Diameter</strong>: When appropriate for the application</li>
+            <li><strong>Optimal Travel Speed</strong>: Fast enough for efficiency but slow enough for quality</li>
+            <li><strong>Minimize Stops and Starts</strong>: Plan work to complete passes without interruption</li>
+            <li><strong>Efficient Electrode Handling</strong>: Keep electrodes in position for quick changes</li>
+            <li><strong>Proper Body Positioning</strong>: Stable, comfortable position to maintain consistency</li>
+            <li><strong>Adequate Workspace Preparation</strong>: Clean, organized, and ready materials</li>
+        </ul>
+        
+        <h3 id="quality-checks">Quality Verification Techniques</h3>
+        
+        <p>Self-inspection during and after welding improves results:</p>
+        
+        <h4>Visual Inspection Checklist:</h4>
+        <ul>
+            <li><strong>Weld Profile</strong>: Proper size, shape, and reinforcement</li>
+            <li><strong>Fusion</strong>: Good tie-in at edges without overlap or undercut</li>
+            <li><strong>Porosity</strong>: No visible holes or pits</li>
+            <li><strong>Cracks</strong>: No visible cracks in weld or adjacent base metal</li>
+            <li><strong>Slag Inclusion</strong>: No visible slag trapped in the weld</li>
+            <li><strong>Proper Size</strong>: Meets drawing/specification requirements</li>
+            <li><strong>Complete Penetration</strong>: If visible, root side shows complete penetration</li>
+        </ul>
+        
+        <h4>Simple Testing Methods:</h4>
+        <ul>
+            <li><strong>Break Test</strong>: For fillet welds on scrap material</li>
+            <li><strong>Nick Break Test</strong>: Notch and break to examine internal structure</li>
+            <li><strong>Bend Test</strong>: For butt joints to verify ductility and penetration</li>
+            <li><strong>Macro Etch Test</strong>: Polish and etch with acid to examine cross-section</li>
+        </ul>
+        
+        <div class="cta-box">
+            <h3>Ready to Apply These Techniques?</h3>
+            <p>Now that you understand advanced welding techniques, check out our structured practice guide to develop your skills methodically:</p>
+            <div class="cta-buttons">
+                <a href="practice.html" class="btn primary-btn">Practice Guide</a>
+                <a href="troubleshooting.html" class="btn secondary-btn">Troubleshooting Help</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>StickWeld<span>Pro</span></h3>
+                <p>Your comprehensive stick welding resource</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="electrodes.html">Electrodes</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="practice.html">Practice Guide</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for future updates and additional resources.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StickWeldPro. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+/* Responsive Styles for StickWeldPro Website */
+
+/* Large Screens (up to 1200px) */
+@media screen and (max-width: 1200px) {
+    .header-container,
+    .features-container,
+    .visual-guides-container,
+    .reference-container,
+    .footer-container,
+    .main-content {
+        max-width: 960px;
+    }
+}
+
+/* Medium Screens (up to 992px) */
+@media screen and (max-width: 992px) {
+    .header-container,
+    .features-container,
+    .visual-guides-container,
+    .reference-container,
+    .footer-container,
+    .main-content {
+        max-width: 720px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .visual-guides-container {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+    
+    /* Adjust welding animation for medium screens */
+    .nav-menu a.active::before {
+        width: 60px; /* Slightly smaller animation */
+        height: 30px;
+    }
+}
+
+/* Small Screens (up to 768px) */
+@media screen and (max-width: 768px) {
+    .header-container,
+    .features-container,
+    .visual-guides-container,
+    .reference-container,
+    .footer-container,
+    .main-content {
+        max-width: 540px;
+    }
+    
+    /* Header/Navigation Changes */
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        align-items: center;
+        padding: var(--spacing-md) 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+        z-index: 100;
+        box-shadow: var(--box-shadow-medium);
+    }
+    
+    .nav-menu.active {
+        max-height: 500px;
+        padding: var(--spacing-md) 0;
+    }
+    
+    .nav-menu li {
+        margin: var(--spacing-sm) 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Fix for welding animation in mobile menu */
+    .nav-menu a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+    
+    .nav-menu a.active::before {
+        /* Repositioned for mobile layout */
+        bottom: -10px;
+        left: 50%;
+        width: 50px; /* Smaller animation for mobile */
+        height: 25px;
+    }
+    
+    .nav-menu a:hover::before {
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.8);
+    }
+    
+    /* Hero Section */
+    .hero {
+        min-height: 400px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+    
+    /* Features Section */
+    .features-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Newsletter Form */
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+        border-radius: var(--border-radius-md);
+    }
+    
+    .newsletter-form button {
+        margin-top: var(--spacing-sm);
+    }
+    
+    /* Table Overflows */
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    /* Better mobile support for tab indicator */
+    .header-container::after {
+        height: 8px; /* Slightly thinner for mobile */
+    }
+}
+
+/* Extra Small Screens (up to 576px) */
+@media screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .header-container,
+    .features-container,
+    .visual-guides-container,
+    .reference-container,
+    .footer-container,
+    .main-content {
+        width: 100%;
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+    
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-logo,
+    .footer-links,
+    .footer-newsletter {
+        text-align: center;
+    }
+    
+    .footer-links h4::after,
+    .footer-newsletter h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    /* Page Header */
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .main-content {
+        margin-top: -30px;
+    }
+    
+    /* Back to Top Button */
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Welding animation adjustments for tiny screens */
+    .nav-menu a.active::before {
+        width: 45px;
+        height: 23px;
+        bottom: -8px;
+    }
+    
+    .nav-menu a:hover::before {
+        width: 45px;
+        height: 23px;
+        bottom: -8px;
+    }
+    
+    .header-container::after {
+        height: 6px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    header, footer, .cta, .hero, .back-to-top {
+        display: none;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+    
+    .main-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+    }
+    
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+    
+    a[href^="#"]::after {
+        content: "";
+    }
+    
+    h2, h3, h4 {
+        page-break-after: avoid;
+    }
+    
+    img, table, pre, figure {
+        page-break-inside: avoid;
+    }
+    
+    p, h2, h3, h4 {
+        orphans: 3;
+        widows: 3;
+    }
+    
+    table {
+        border-collapse: collapse;
+    }
+    
+    th {
+        background-color: #eee !important;
+        color: #000 !important;
+    }
+    
+    tr {
+        page-break-inside: avoid;
+    }
+    
+    .note-box, .warning-box, .tip-box {
+        border: 1px solid #000;
+        padding: 0.5cm;
+        margin: 0.5cm 0;
+    }
+}

@@ -1,0 +1,16 @@
+In a production version of this website, you would need to add the following images:
+
+1. hero-welding.jpg - A high-quality banner image of stick welding in action (1200x500px)
+2. welding-practice.jpg - Image for CTA section showing someone practicing welding (1200x400px)
+3. page-header.jpg - Background image for page headers (1200x300px)
+4. placeholder-stick-process.jpg - Diagram showing the stick welding process (800x400px)
+5. placeholder-electrode-angles.jpg - Diagram showing proper electrode angles (600x300px)
+6. placeholder-joint-types.jpg - Diagram of the five basic joint types (600x300px)
+
+You can use the ASCII diagrams from the Stick_Welding_Visual_Reference.md file as a basis for creating these images. Professional diagrams would greatly enhance the visual appeal and educational value of the website.
+
+For a fully functional website, you would also need to:
+1. Complete all the content pages (techniques.html, electrodes.html, etc.)
+2. Add real images throughout the site
+3. Set up a proper backend for the newsletter and other interactive features
+4. Configure proper hosting for deploying the site live

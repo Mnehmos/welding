@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 35">
+  <!-- Hand with Welding Rod (Stick) -->
+  <g id="hand-group">
+    <!-- Stick Electrode -->
+    <rect x="30" y="12" width="25" height="1.8" fill="#B87333" rx="0.5" ry="0.5" transform="rotate(-30, 30, 12)"/>
+    
+    <!-- Electrode Holder -->
+    <path d="M26 15 L31 13 L31 17 L26 19 Z" fill="#222"/>
+    
+    <!-- Hand (simplified) -->
+    <path d="M18 17 C20 13, 25 12, 26 15 C28 19, 24 20, 22 19 L21 19.5 C19 20, 16 19.5, 18 17 Z" fill="#d1a789"/>
+    
+    <!-- Wrist/Arm -->
+    <path d="M10 18 L18 17" stroke="#d1a789" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Small hand movement animation - optimized with fewer keyframes -->
+    <animateTransform 
+      attributeName="transform"
+      type="translate"
+      values="0,0; 0.7,-0.3; 0,0"
+      dur="1s"
+      repeatCount="indefinite"
+      calcMode="spline"
+      keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+  </g>
+  
+  <!-- Welding Spark Animation - optimized for performance -->
+  <g>
+    <!-- Spark Base -->
+    <circle cx="42" cy="22.5" r="2" fill="#f7d87c">
+      <animate attributeName="opacity" values="1;0.8;1" dur="0.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      <animate attributeName="r" values="1.8;2.2;1.8" dur="0.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    </circle>
+    
+    <!-- Animated Sparks - simplified for better performance -->
+    <g>
+      <!-- Spark 1 -->
+      <path d="M42 22.5 L44 20" stroke="#f7d87c" stroke-width="1">
+        <animate attributeName="opacity" values="1;0;1" dur="0.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+        <animate attributeName="d" values="M42 22.5 L44 20; M42 22.5 L46 19; M42 22.5 L44 20" dur="1s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      </path>
+      
+      <!-- Spark 2 -->
+      <path d="M42 22.5 L46 23" stroke="#f7d87c" stroke-width="1">
+        <animate attributeName="opacity" values="0;1;0" dur="0.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+        <animate attributeName="d" values="M42 22.5 L46 23; M42 22.5 L47 22.5; M42 22.5 L46 23" dur="1.1s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      </path>
+      
+      <!-- Spark 3 -->
+      <path d="M42 22.5 L41 19" stroke="#f7d87c" stroke-width="1">
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+        <animate attributeName="d" values="M42 22.5 L41 19; M42 22.5 L40 18; M42 22.5 L41 19" dur="1.2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      </path>
+      
+      <!-- Spark 4 -->
+      <path d="M42 22.5 L40 25" stroke="#f7d87c" stroke-width="1">
+        <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+        <animate attributeName="d" values="M42 22.5 L40 25; M42 22.5 L38 26; M42 22.5 L40 25" dur="1s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      </path>
+    </g>
+    
+    <!-- Light Glow - simplified animation -->
+    <circle cx="42" cy="22.5" r="4" fill="#f9e076" opacity="0.6">
+      <animate attributeName="opacity" values="0.5;0.3;0.5" dur="0.6s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+      <animate attributeName="r" values="3.5;4.2;3.5" dur="0.8s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+    </circle>
+  </g>
+  
+  <!-- Heat Glowing on Metal - Using proper defs for the gradient -->
+  <defs>
+    <radialGradient id="glow-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#f7d87c" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#f9e076" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f9e076" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <circle cx="42" cy="22.5" r="6" fill="url(#glow-gradient)" opacity="0.4">
+    <animate attributeName="opacity" values="0.3;0.2;0.3" dur="0.7s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
+  </circle>
+</svg>

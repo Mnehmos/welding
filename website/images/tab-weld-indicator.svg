@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80">
+  <!-- Background/Metal Surface -->
+  <rect width="200" height="80" fill="#333" rx="4" ry="4"/>
+  <rect x="10" y="40" width="180" height="30" fill="#555" rx="2" ry="2"/>
+  
+  <!-- Weld Seam -->
+  <path d="M30 55 L170 55" stroke="#777" stroke-width="2"/>
+  
+  <!-- Hand with Welding Rod (Stick) -->
+  <g id="hand-with-stick">
+    <!-- Stick Electrode -->
+    <rect x="85" y="25" width="70" height="4" fill="#B87333" rx="1" ry="1" transform="rotate(-30, 85, 25)"/>
+    
+    <!-- Electrode Holder -->
+    <path d="M75 35 L90 30 L90 40 L75 45 Z" fill="#222"/>
+    
+    <!-- Hand (simplified) -->
+    <path d="M50 40 C55 30, 70 25, 75 35 C80 45, 70 50, 65 45 L60 48 C55 50, 45 48, 50 40 Z" fill="#d1a789"/>
+    
+    <!-- Wrist/Arm -->
+    <path d="M30 45 L50 40" stroke="#d1a789" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Welding Spark Animation -->
+  <g>
+    <!-- Spark Base (always visible) -->
+    <circle cx="120" cy="55" r="3" fill="#f7d87c">
+      <animate attributeName="opacity" values="1;0.8;1;0.9;1" dur="0.3s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Animated Sparks -->
+    <g>
+      <!-- Spark 1 -->
+      <path d="M120 55 L125 50" stroke="#f7d87c" stroke-width="2">
+        <animate attributeName="opacity" values="1;0;1;0;1" dur="0.8s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M120 55 L125 50; M120 55 L130 45; M120 55 L125 50" dur="1.5s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Spark 2 -->
+      <path d="M120 55 L130 58" stroke="#f7d87c" stroke-width="2">
+        <animate attributeName="opacity" values="0;1;0;1;0" dur="0.7s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M120 55 L130 58; M120 55 L135 57; M120 55 L130 58" dur="1.3s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Spark 3 -->
+      <path d="M120 55 L118 48" stroke="#f7d87c" stroke-width="2">
+        <animate attributeName="opacity" values="0.5;0;0.5;0;0.5" dur="0.9s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M120 55 L118 48; M120 55 L116 45; M120 55 L118 48" dur="1.4s" repeatCount="indefinite"/>
+      </path>
+      
+      <!-- Spark 4 -->
+      <path d="M120 55 L115 60" stroke="#f7d87c" stroke-width="2">
+        <animate attributeName="opacity" values="0;1;0;1;0" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="d" values="M120 55 L115 60; M120 55 L110 63; M120 55 L115 60" dur="1.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Light Glow -->
+    <circle cx="120" cy="55" r="10" fill="#f9e076">
+      <animate attributeName="opacity" values="0.6;0.3;0.7;0.4;0.6" dur="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="8;10;9;12;8" dur="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Hand Movement Animation -->
+  <animateTransform 
+    xlink:href="#hand-with-stick"
+    attributeName="transform"
+    type="translate"
+    values="0,0; 2,-1; 0,0; -1,1; 0,0"
+    dur="1.5s"
+    repeatCount="indefinite"/>
+    
+  <!-- Heat Glowing on Metal -->
+  <circle cx="120" cy="55" r="15" fill="url(#glow-gradient)">
+    <animate attributeName="opacity" values="0.4;0.2;0.5;0.3;0.4" dur="0.6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Gradients -->
+  <defs>
+    <radialGradient id="glow-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#f7d87c" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#f9e076" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f9e076" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>

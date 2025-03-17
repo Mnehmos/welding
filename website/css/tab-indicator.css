@@ -1,0 +1,73 @@
+/* Tab Indicator System - Modified for JS Animation Control */
+
+/* ===== Core Layout System ===== */
+/* Header container setup */
+.header-container {
+  position: relative;
+  padding-bottom: 25px;
+  overflow: visible;
+  will-change: transform;
+}
+
+/* Navigation fundamentals */
+.nav-menu {
+  position: relative;
+  transform: translateZ(0);
+  z-index: 5;
+  isolation: isolate;
+}
+
+/* ===== Tab Layout Improvements ===== */
+/* Eliminate potential text movement and improve positioning */
+.nav-menu a {
+  padding: 8px 12px;
+  white-space: nowrap;
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Override for active state - no additional indicators needed with JS animation */
+.nav-menu a.active::after {
+  display: none !important;
+}
+
+/* ===== Animation Elements - These are now created by JS ===== */
+.welding-animation-element {
+  image-rendering: high-quality;
+  pointer-events: none;
+}
+
+/* Keyframes for the welding sparks pulse - used by the JS animation */
+@keyframes sparkPulse {
+  0% { filter: drop-shadow(0 0 3px rgba(255, 165, 0, 0.5)); }
+  50% { filter: drop-shadow(0 0 8px rgba(255, 165, 0, 0.8)); }
+  100% { filter: drop-shadow(0 0 3px rgba(255, 165, 0, 0.5)); }
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+  /* Adjust position for mobile menu */
+  .header-container {
+    padding-bottom: 20px;
+  }
+  
+  .nav-menu {
+    z-index: 1000;
+  }
+  
+  /* Mobile nav items need more spacing for the welding effect */
+  .nav-menu.active li {
+    margin-bottom: 5px;
+  }
+}
+
+/* Make sure elements don't get hidden on small screens */
+@media (max-width: 576px) {
+  .welding-hand,
+  .metal-surface {
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Welding Troubleshooting Guide - StickWeldPro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/tab-indicator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>StickWeld<span>Pro</span></h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="electrodes.html">Electrodes</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                    <li><a href="troubleshooting.html" class="active">Troubleshooting</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="practice.html">Practice Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Stick Welding Troubleshooting Guide</h1>
+        <ul class="breadcrumbs">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <!-- JS will populate this -->
+        </div>
+
+        <h2 id="troubleshooting-approach">Systematic Troubleshooting Approach</h2>
+        
+        <p>When issues arise in stick welding, a systematic approach helps identify and resolve problems quickly and effectively.</p>
+        
+        <h3 id="five-step-process">Five-Step Troubleshooting Process</h3>
+        
+        <ol>
+            <li><strong>Identify the Problem</strong>: Accurately recognize the specific issue</li>
+            <li><strong>Determine Possible Causes</strong>: List potential factors contributing to the problem</li>
+            <li><strong>Test Solutions</strong>: Make one change at a time, testing after each adjustment</li>
+            <li><strong>Implement the Fix</strong>: Apply the solution that resolves the issue</li>
+            <li><strong>Prevent Recurrence</strong>: Document what worked and update procedures</li>
+        </ol>
+        
+        <h3 id="troubleshooting-variables">Key Variables to Check</h3>
+        
+        <p>When troubleshooting, consider these variables in the following order:</p>
+        
+        <ol>
+            <li><strong>Equipment Function</strong>: Is the machine working correctly?</li>
+            <li><strong>Material Preparation</strong>: Is the material clean and properly prepared?</li>
+            <li><strong>Electrode Selection</strong>: Is the electrode appropriate for the application?</li>
+            <li><strong>Electrode Condition</strong>: Is the electrode dry and undamaged?</li>
+            <li><strong>Welding Parameters</strong>: Are amperage, polarity, and arc length correct?</li>
+            <li><strong>Technique</strong>: Is the welding technique suitable for the application?</li>
+            <li><strong>Environmental Factors</strong>: Are wind, moisture, or temperature affecting the weld?</li>
+        </ol>
+        
+        <div class="tip-box">
+            <p>Keep a welding log of problems encountered and solutions that worked. This creates a personalized troubleshooting guide that becomes more valuable over time.</p>
+        </div>
+        
+        <h3 id="cause-relationship">Understanding Cause and Effect</h3>
+        
+        <p>Welding defects are rarely random. Most issues have specific causes that follow consistent patterns:</p>
+        
+        <ul>
+            <li><strong>Consistent Defects</strong>: If the same problem occurs repeatedly, look for systematic issues (machine settings, material preparation, technique)</li>
+            <li><strong>Intermittent Defects</strong>: If problems come and go, look for variable factors (drafts, electrode sticking, inconsistent technique)</li>
+            <li><strong>Progressive Defects</strong>: If problems worsen over time, look for cumulative factors (heat buildup, electrode moisture absorption, equipment degradation)</li>
+        </ul>
+
+        <h2 id="quick-guide">Quick Reference Troubleshooting Chart</h2>
+        
+        <div class="table-container" id="quick-guide">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problem</th>
+                        <th>Possible Causes</th>
+                        <th>Solutions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Difficult Arc Starting</td>
+                        <td>
+                            <ul>
+                                <li>Low open circuit voltage</li>
+                                <li>Damp electrodes</li>
+                                <li>Poor connections</li>
+                                <li>Improper striking technique</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Check machine settings</li>
+                                <li>Use fresh electrodes</li>
+                                <li>Tighten all connections</li>
+                                <li>Use scratch or tap technique properly</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Excessive Spatter</td>
+                        <td>
+                            <ul>
+                                <li>Amperage too high</li>
+                                <li>Arc too long</li>
+                                <li>Improper polarity</li>
+                                <li>Damp electrodes</li>
+                                <li>Dirty base metal</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Reduce amperage</li>
+                                <li>Shorten arc length</li>
+                                <li>Check polarity requirements</li>
+                                <li>Use dry electrodes</li>
+                                <li>Clean base metal thoroughly</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porosity</td>
+                        <td>
+                            <ul>
+                                <li>Contaminated base metal</li>
+                                <li>Damp electrodes</li>
+                                <li>Arc too long</li>
+                                <li>Travel speed too fast</li>
+                                <li>Wind or drafts</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Clean base metal thoroughly</li>
+                                <li>Use dry electrodes</li>
+                                <li>Maintain proper arc length</li>
+                                <li>Adjust travel speed</li>
+                                <li>Use windscreens</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Undercut</td>
+                        <td>
+                            <ul>
+                                <li>Excessive amperage</li>
+                                <li>Arc too long</li>
+                                <li>Improper electrode angle</li>
+                                <li>Travel speed too fast</li>
+                                <li>Excessive weaving</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Reduce amperage</li>
+                                <li>Maintain shorter arc</li>
+                                <li>Adjust electrode angle</li>
+                                <li>Slow travel speed</li>
+                                <li>Reduce weave width or pause at edges</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Incomplete Fusion</td>
+                        <td>
+                            <ul>
+                                <li>Insufficient amperage</li>
+                                <li>Travel speed too fast</li>
+                                <li>Improper electrode angle</li>
+                                <li>Poor joint preparation</li>
+                                <li>Contaminated surfaces</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Increase amperage</li>
+                                <li>Slow travel speed</li>
+                                <li>Adjust electrode angle</li>
+                                <li>Improve joint preparation</li>
+                                <li>Clean surfaces thoroughly</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cracking</td>
+                        <td>
+                            <ul>
+                                <li>High restraint</li>
+                                <li>Hydrogen in weld metal</li>
+                                <li>Incorrect electrode</li>
+                                <li>Improper preheat/interpass</li>
+                                <li>Poor joint design</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Reduce restraint when possible</li>
+                                <li>Use low hydrogen electrodes</li>
+                                <li>Select appropriate electrode</li>
+                                <li>Use proper preheat/interpass temp</li>
+                                <li>Improve joint design</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Arc Blow</td>
+                        <td>
+                            <ul>
+                                <li>Magnetic fields</li>
+                                <li>Poor work clamp location</li>
+                                <li>DC current near end of joint</li>
+                                <li>Magnetic material properties</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Reposition work clamp</li>
+                                <li>Switch to AC current</li>
+                                <li>Use backstep technique</li>
+                                <li>Use shorter arc length</li>
+                                <li>Wrap cable around workpiece</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 id="arc-starting-issues">Arc Starting and Stability Issues</h2>
+        
+        <h3 id="difficult-starting">Difficulty Starting the Arc</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Electrode sticks to workpiece</li>
+                    <li>Arc initiates but immediately goes out</li>
+                    <li>Inconsistent starts</li>
+                    <li>Multiple attempts needed to start arc</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Low Open Circuit Voltage</strong>: Insufficient voltage to initiate arc</li>
+                    <li><strong>Damp Electrodes</strong>: Moisture interferes with arc initiation</li>
+                    <li><strong>Poor Connections</strong>: High resistance in circuit</li>
+                    <li><strong>Improper Technique</strong>: Incorrect striking method</li>
+                    <li><strong>Wrong Polarity</strong>: Incorrect polarity for electrode type</li>
+                    <li><strong>Surface Contamination</strong>: Oil, paint, or rust present</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Check Machine Settings</strong>:
+                        <ul>
+                            <li>Verify open circuit voltage is sufficient (minimum 50V)</li>
+                            <li>Ensure amperage is appropriate for electrode size</li>
+                            <li>Confirm polarity matches electrode requirements</li>
+                        </ul>
+                    </li>
+                    <li><strong>Check Electrode Condition</strong>:
+                        <ul>
+                            <li>Use fresh, dry electrodes</li>
+                            <li>Verify electrodes are stored properly</li>
+                            <li>Try different electrode type if issues persist</li>
+                        </ul>
+                    </li>
+                    <li><strong>Inspect Connections</strong>:
+                        <ul>
+                            <li>Ensure tight, clean connections at electrode holder</li>
+                            <li>Check work clamp for solid connection</li>
+                            <li>Inspect cables for damage</li>
+                        </ul>
+                    </li>
+                    <li><strong>Improve Technique</strong>:
+                        <ul>
+                            <li>For scratch start: Use light, quick motion like striking a match</li>
+                            <li>For tap start: Tap lightly and immediately raise to establish arc</li>
+                            <li>Start on clean, bare metal area</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="unstable-arc">Unstable Arc</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Arc sputters or pops</li>
+                    <li>Inconsistent arc sound</li>
+                    <li>Arc wanders or deflects</li>
+                    <li>Arc extinguishes unexpectedly</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Arc Length Issues</strong>: Too long or inconsistent arc length</li>
+                    <li><strong>Incorrect Amperage</strong>: Too high or too low</li>
+                    <li><strong>Electrode Problems</strong>: Moisture, coating damage</li>
+                    <li><strong>Arc Blow</strong>: Magnetic forces deflecting arc</li>
+                    <li><strong>Power Supply Fluctuations</strong>: Inconsistent power</li>
+                    <li><strong>Surface Contaminants</strong>: Oil, rust, paint</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Control Arc Length</strong>:
+                        <ul>
+                            <li>Maintain consistent arc length (approx. = electrode diameter)</li>
+                            <li>Use arm rest or support for stability</li>
+                            <li>Practice steady hand movements</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adjust Amperage</strong>:
+                        <ul>
+                            <li>Increase amperage if arc is weak or stubborn</li>
+                            <li>Decrease amperage if arc is harsh or erratic</li>
+                            <li>Stay within the electrode's recommended range</li>
+                        </ul>
+                    </li>
+                    <li><strong>Address Arc Blow</strong>:
+                        <ul>
+                            <li>Reposition work clamp</li>
+                            <li>Switch to AC if using DC</li>
+                            <li>Angle electrode slightly into the blow direction</li>
+                            <li>Wrap ground cable around workpiece</li>
+                        </ul>
+                    </li>
+                    <li><strong>Check Power Supply</strong>:
+                        <ul>
+                            <li>Ensure generator has sufficient capacity</li>
+                            <li>Check for shared circuits causing fluctuations</li>
+                            <li>Inspect for loose connections</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="arc-blow">Arc Blow</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Arc deflects to one side</li>
+                    <li>Arc wanders unpredictably</li>
+                    <li>Difficult to control arc direction</li>
+                    <li>Deflection typically worse at starts/stops and corners</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Magnetic Fields</strong>: DC current creates magnetic field around arc</li>
+                    <li><strong>Work Clamp Position</strong>: Current path creates unbalanced field</li>
+                    <li><strong>Joint Configuration</strong>: Corner joints and ends of welds</li>
+                    <li><strong>Base Metal</strong>: Some steels have magnetic properties</li>
+                    <li><strong>Nearby Ferromagnetic Objects</strong>: Tools, fixtures</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Work Clamp Positioning</strong>:
+                        <ul>
+                            <li>Position clamp in direction of intended weld</li>
+                            <li>Use multiple work clamps for large assemblies</li>
+                            <li>Move clamp as weld progresses for long welds</li>
+                        </ul>
+                    </li>
+                    <li><strong>Current Type</strong>:
+                        <ul>
+                            <li>Switch to AC current (eliminates magnetic field issues)</li>
+                            <li>If DC is required, use shorter arc length</li>
+                        </ul>
+                    </li>
+                    <li><strong>Welding Technique</strong>:
+                        <ul>
+                            <li>Use backstep or skip welding technique</li>
+                            <li>Angle electrode slightly against blow direction</li>
+                            <li>Increase travel speed</li>
+                            <li>Use shorter arc length</li>
+                        </ul>
+                    </li>
+                    <li><strong>Physical Solutions</strong>:
+                        <ul>
+                            <li>Wrap ground cable around workpiece (creates counter-magnetic field)</li>
+                            <li>Place steel bars parallel to weld to provide alternate paths</li>
+                            <li>Pre-place tack welds to distribute magnetic fields</li>
+                            <li>Remove nearby ferromagnetic objects</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <h2 id="weld-quality-defects">Weld Quality Defects</h2>
+        
+        <h3 id="porosity">Porosity</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Visible holes or pores in weld bead</li>
+                    <li>Surface porosity (visible holes)</li>
+                    <li>Subsurface porosity (only visible after testing)</li>
+                    <li>Clustered or scattered tiny holes</li>
+                </ul>
+            </div>
+            
+            <div class="problem-image">
+                <img src="../images/placeholder-porosity.jpg" alt="Weld Porosity Examples">
+                <figcaption>Examples of porosity in welds</figcaption>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Contaminated Base Metal</strong>: Oil, grease, rust, paint, moisture</li>
+                    <li><strong>Damp Electrodes</strong>: Moisture in electrode coating</li>
+                    <li><strong>Improper Arc Length</strong>: Arc too long</li>
+                    <li><strong>Improper Travel Speed</strong>: Too fast for gas to escape</li>
+                    <li><strong>Wind or Drafts</strong>: Disrupting shielding gas</li>
+                    <li><strong>Improper Electrode</strong>: Wrong electrode for material</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Proper Material Preparation</strong>:
+                        <ul>
+                            <li>Clean base metal thoroughly (grind, wire brush, solvent)</li>
+                            <li>Remove all paint, rust, oil, grease, moisture</li>
+                            <li>Pre-heat if needed to drive off surface moisture</li>
+                        </ul>
+                    </li>
+                    <li><strong>Electrode Management</strong>:
+                        <ul>
+                            <li>Store electrodes in dry conditions</li>
+                            <li>Use rod ovens for low hydrogen electrodes</li>
+                            <li>Discard electrodes that have been exposed to moisture</li>
+                        </ul>
+                    </li>
+                    <li><strong>Technique Adjustments</strong>:
+                        <ul>
+                            <li>Maintain shorter arc length</li>
+                            <li>Slow travel speed to allow gases to escape</li>
+                            <li>Use proper manipulation technique for electrode type</li>
+                        </ul>
+                    </li>
+                    <li><strong>Environmental Control</strong>:
+                        <ul>
+                            <li>Use windscreens in outdoor conditions</li>
+                            <li>Eliminate drafts from fans or ventilation</li>
+                            <li>Position work to minimize environmental effects</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="incomplete-fusion">Incomplete Fusion</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Lack of bonding between weld metal and base metal</li>
+                    <li>Visible areas where weld doesn't blend with base metal</li>
+                    <li>Gap or separation between weld and base metal</li>
+                    <li>Cold lap or overlap at edges</li>
+                </ul>
+            </div>
+            
+            <div class="problem-image">
+                <img src="../images/placeholder-lack-of-fusion.jpg" alt="Incomplete Fusion Examples">
+                <figcaption>Examples of incomplete fusion in welds</figcaption>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Insufficient Heat Input</strong>: Amperage too low</li>
+                    <li><strong>Travel Speed Too Fast</strong>: Inadequate time for fusion</li>
+                    <li><strong>Improper Electrode Angle</strong>: Not directing heat properly</li>
+                    <li><strong>Surface Contamination</strong>: Preventing proper wetting</li>
+                    <li><strong>Improper Joint Preparation</strong>: Poor fit-up or design</li>
+                    <li><strong>Wrong Electrode Selection</strong>: Not suited for the application</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Adjust Welding Parameters</strong>:
+                        <ul>
+                            <li>Increase amperage to provide adequate heat</li>
+                            <li>Ensure correct polarity for electrode type</li>
+                            <li>Use electrode diameter appropriate for joint thickness</li>
+                        </ul>
+                    </li>
+                    <li><strong>Improve Technique</strong>:
+                        <ul>
+                            <li>Slow travel speed to allow better fusion</li>
+                            <li>Maintain proper work angle and travel angle</li>
+                            <li>Ensure arc is directed at leading edge of weld pool</li>
+                            <li>Use slight weaving motion if needed to ensure sidewall fusion</li>
+                        </ul>
+                    </li>
+                    <li><strong>Joint Preparation</strong>:
+                        <ul>
+                            <li>Clean joint faces thoroughly</li>
+                            <li>Create proper bevel angles for thick materials</li>
+                            <li>Ensure appropriate root gap</li>
+                            <li>Remove all contaminants (oil, rust, paint, etc.)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Electrode Selection</strong>:
+                        <ul>
+                            <li>Choose electrode with appropriate penetration characteristics</li>
+                            <li>Use E6010/E6011 for better penetration in critical applications</li>
+                            <li>Ensure electrode is appropriate for base material</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="undercut">Undercut</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Groove melted into base metal at weld toe</li>
+                    <li>Insufficient filling at edge of weld</li>
+                    <li>Linear depression along weld edge</li>
+                    <li>Reduced thickness in parent material at weld edge</li>
+                </ul>
+            </div>
+            
+            <div class="problem-image">
+                <img src="../images/placeholder-undercut.jpg" alt="Undercut Examples">
+                <figcaption>Examples of undercut in welds</figcaption>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Excessive Amperage</strong>: Too much heat melting base metal</li>
+                    <li><strong>Improper Electrode Angle</strong>: Not directing filler properly</li>
+                    <li><strong>Arc Length Too Long</strong>: Poor control of molten pool</li>
+                    <li><strong>Travel Speed Too Fast</strong>: Insufficient time for filling</li>
+                    <li><strong>Excessive Manipulation</strong>: Too wide a weave pattern</li>
+                    <li><strong>Poor Technique</strong>: No pause at weld toes during weaving</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Adjust Welding Parameters</strong>:
+                        <ul>
+                            <li>Reduce amperage to appropriate level</li>
+                            <li>Maintain shorter arc length</li>
+                            <li>Use electrode diameter appropriate for joint</li>
+                        </ul>
+                    </li>
+                    <li><strong>Improve Electrode Control</strong>:
+                        <ul>
+                            <li>Hold correct work angle (typically 10-20° from perpendicular)</li>
+                            <li>Focus arc on leading edge of weld pool, not on side walls</li>
+                            <li>Maintain consistent electrode extension</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adjust Travel Speed</strong>:
+                        <ul>
+                            <li>Slow down to allow proper filling at toes</li>
+                            <li>Use consistent travel speed</li>
+                            <li>When using weave pattern, slow at edges</li>
+                        </ul>
+                    </li>
+                    <li><strong>Weaving Technique</strong>:
+                        <ul>
+                            <li>Pause momentarily at each side of the weave</li>
+                            <li>Reduce weave width (not more than 2-3 times electrode diameter)</li>
+                            <li>Use J or C weave pattern to control heat at edges</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="excessive-reinforcement">Excessive Reinforcement</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Weld metal stacked too high above base material</li>
+                    <li>Excessively convex bead profile</li>
+                    <li>Weld height disproportionate to width</li>
+                    <li>Creates stress concentration at weld toe</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Travel Speed Too Slow</strong>: Excessive deposit in one area</li>
+                    <li><strong>Current Too Low</strong>: Poor weld metal flow and wetting</li>
+                    <li><strong>Improper Electrode Angle</strong>: Depositing rather than flowing metal</li>
+                    <li><strong>Improper Electrode Size</strong>: Too large for application</li>
+                    <li><strong>Poor Joint Design</strong>: Insufficient space for proper profile</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Adjust Travel Speed</strong>:
+                        <ul>
+                            <li>Increase travel speed for flatter bead profile</li>
+                            <li>Maintain consistent speed</li>
+                        </ul>
+                    </li>
+                    <li><strong>Modify Welding Parameters</strong>:
+                        <ul>
+                            <li>Increase amperage within electrode's range</li>
+                            <li>Use larger diameter electrode with higher amperage</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adjust Technique</strong>:
+                        <ul>
+                            <li>Use slight weaving motion to spread weld pool</li>
+                            <li>Hold proper work angle to promote wetting</li>
+                            <li>Control arc length for better flow</li>
+                        </ul>
+                    </li>
+                    <li><strong>Modify Joint Design</strong>:
+                        <ul>
+                            <li>Widen root opening if possible</li>
+                            <li>Adjust bevel angle for better access</li>
+                            <li>Consider adapting to multi-pass procedure</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <h2 id="structural-defects">Structural Defects</h2>
+        
+        <h3 id="cracking">Cracking</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Visible linear fractures in or adjacent to weld</li>
+                    <li>Hot cracks: Occur during or immediately after welding</li>
+                    <li>Cold cracks: Develop hours or days after welding</li>
+                    <li>Longitudinal, transverse, crater, or heat-affected zone cracks</li>
+                </ul>
+            </div>
+            
+            <div class="problem-image">
+                <img src="../images/placeholder-cracking.jpg" alt="Weld Cracking Examples">
+                <figcaption>Examples of different types of weld cracks</figcaption>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Common Causes by Crack Type:</h4>
+                
+                <h5>Hot Cracking:</h5>
+                <ul>
+                    <li>High sulfur or phosphorus content in base metal</li>
+                    <li>High restraint during solidification</li>
+                    <li>Poor joint design creating high stress concentration</li>
+                    <li>Improper electrode selection</li>
+                </ul>
+                
+                <h5>Cold Cracking (Hydrogen-Induced):</h5>
+                <ul>
+                    <li>Hydrogen in weld metal (damp electrodes)</li>
+                    <li>High hardness in heat-affected zone</li>
+                    <li>High restraint/residual stress</li>
+                    <li>Inadequate preheat or interpass temperature</li>
+                </ul>
+                
+                <h5>Crater Cracking:</h5>
+                <ul>
+                    <li>Improper termination technique</li>
+                    <li>Ending weld abruptly</li>
+                    <li>Insufficient crater fill</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Prevent Hydrogen Cracking</strong>:
+                        <ul>
+                            <li>Use low hydrogen electrodes (E7018)</li>
+                            <li>Store electrodes properly (rod ovens)</li>
+                            <li>Clean joint surfaces thoroughly</li>
+                            <li>Apply appropriate preheat:
+                                <ul>
+                                    <li>Carbon steel < 1/2": Generally no preheat required</li>
+                                    <li>Carbon steel 1/2" - 1": 200-300°F</li>
+                                    <li>Carbon steel > 1": 300-500°F</li>
+                                    <li>High-carbon or alloy steel: 400-700°F</li>
+                                </ul>
+                            </li>
+                            <li>Maintain interpass temperature</li>
+                            <li>Slow cooling rate after welding</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prevent Hot Cracking</strong>:
+                        <ul>
+                            <li>Use appropriate filler metal for base material</li>
+                            <li>Reduce joint restraint when possible</li>
+                            <li>Use proper joint design to minimize stress</li>
+                            <li>Control heat input (not too high)</li>
+                            <li>Apply proper weld sequence to distribute stress</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prevent Crater Cracks</strong>:
+                        <ul>
+                            <li>Fill crater before breaking arc</li>
+                            <li>Use backstep technique at the end of welds</li>
+                            <li>Pause at the end to allow crater to fill</li>
+                            <li>Use "crater fill" technique: reduce current at end</li>
+                        </ul>
+                    </li>
+                    <li><strong>Repair Existing Cracks</strong>:
+                        <ul>
+                            <li>Remove crack completely by grinding</li>
+                            <li>Verify crack removal with dye penetrant testing</li>
+                            <li>Preheat area before repair welding</li>
+                            <li>Use low hydrogen process for repair</li>
+                            <li>Consider stress relief after repair</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="slag-inclusions">Slag Inclusions</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Slag trapped within weld metal</li>
+                    <li>Visible as dark spots on radiograph</li>
+                    <li>Often in lines or clusters</li>
+                    <li>May not be visible on surface</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Inadequate Cleaning Between Passes</strong>: Trapped slag from previous pass</li>
+                    <li><strong>Poor Electrode Manipulation</strong>: Not allowing slag to float</li>
+                    <li><strong>Travel Speed Too Fast</strong>: Slag overtaken by weld pool</li>
+                    <li><strong>Too Low Amperage</strong>: Insufficient fluidity of weld pool</li>
+                    <li><strong>Poor Joint Design</strong>: Tight angles trapping slag</li>
+                    <li><strong>Improper Electrode Angle</strong>: Pushing slag ahead of arc</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Proper Interpass Cleaning</strong>:
+                        <ul>
+                            <li>Remove all slag completely before next pass</li>
+                            <li>Use chipping hammer to break slag</li>
+                            <li>Follow with wire brush cleaning</li>
+                            <li>Pay special attention to corners and edges</li>
+                            <li>Inspect thoroughly before continuing</li>
+                        </ul>
+                    </li>
+                    <li><strong>Adjust Welding Technique</strong>:
+                        <ul>
+                            <li>Use proper weave pattern allowing slag to float</li>
+                            <li>Maintain proper travel speed</li>
+                            <li>Hold correct work angle</li>
+                            <li>Ensure adequate fluidity of weld pool</li>
+                        </ul>
+                    </li>
+                    <li><strong>Joint Design Considerations</strong>:
+                        <ul>
+                            <li>Provide adequate access for cleaning</li>
+                            <li>Avoid extremely tight angles</li>
+                            <li>Use joint designs that facilitate slag removal</li>
+                        </ul>
+                    </li>
+                    <li><strong>Parameter Adjustments</strong>:
+                        <ul>
+                            <li>Increase amperage within electrode range</li>
+                            <li>Ensure proper arc length</li>
+                            <li>Consider electrode type with better slag detachability</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="incomplete-penetration">Incomplete Penetration</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Root of joint not completely fused</li>
+                    <li>Gap or void at the root</li>
+                    <li>Visible as dark line in radiograph at center of weld</li>
+                    <li>Reduced strength at root</li>
+                </ul>
+            </div>
+            
+            <div class="problem-image">
+                <img src="../images/placeholder-incomplete-penetration.jpg" alt="Incomplete Penetration Examples">
+                <figcaption>Examples of incomplete penetration at weld root</figcaption>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Insufficient Heat Input</strong>: Amperage too low</li>
+                    <li><strong>Improper Joint Design</strong>: 
+                        <ul>
+                            <li>Root face too thick</li>
+                            <li>Root opening too tight</li>
+                            <li>Included angle too narrow</li>
+                        </ul>
+                    </li>
+                    <li><strong>Electrode Selection</strong>: Inadequate penetration characteristics</li>
+                    <li><strong>Poor Technique</strong>: Not focusing arc on root</li>
+                    <li><strong>Travel Speed Too Fast</strong>: Insufficient time for penetration</li>
+                    <li><strong>Misalignment</strong>: Poor fit-up creating uneven gap</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Adjust Welding Parameters</strong>:
+                        <ul>
+                            <li>Increase amperage for better penetration</li>
+                            <li>Use correct polarity (DCEP for maximum penetration)</li>
+                            <li>Select appropriate electrode size for joint</li>
+                        </ul>
+                    </li>
+                    <li><strong>Improve Joint Design</strong>:
+                        <ul>
+                            <li>Ensure adequate root opening (typically 1/16" to 3/32")</li>
+                            <li>Use proper bevel angle (60-75° included angle)</li>
+                            <li>Reduce root face thickness (1/16" or less)</li>
+                            <li>Consider backing strip or backing weld</li>
+                        </ul>
+                    </li>
+                    <li><strong>Electrode Selection</strong>:
+                        <ul>
+                            <li>Use E6010 or E6011 for root passes</li>
+                            <li>Select smaller diameter electrode for root pass</li>
+                            <li>Choose electrodes with deep penetration characteristics</li>
+                        </ul>
+                    </li>
+                    <li><strong>Welding Technique</strong>:
+                        <ul>
+                            <li>Focus arc on root of joint</li>
+                            <li>Use slight side-to-side motion for wider root passes</li>
+                            <li>Maintain proper travel speed (slower for better penetration)</li>
+                            <li>For open root, maintain visible keyhole</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <h2 id="equipment-issues">Equipment and Operational Issues</h2>
+        
+        <h3 id="electrode-sticking">Electrode Sticking</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Symptoms:</h4>
+                <ul>
+                    <li>Electrode fuses to workpiece during arc initiation</li>
+                    <li>Frequent sticking during welding</li>
+                    <li>Difficulty restarting after electrode sticks</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Causes:</h4>
+                <ol>
+                    <li><strong>Amperage Too Low</strong>: Insufficient heat to establish arc</li>
+                    <li><strong>Improper Starting Technique</strong>: Holding electrode against work too long</li>
+                    <li><strong>Damp Electrodes</strong>: Moisture affecting coating performance</li>
+                    <li><strong>Long Arc Length</strong>: Then touching workpiece</li>
+                    <li><strong>Machine Anti-Stick Feature Off</strong>: Some machines have anti-stick settings</li>
+                </ol>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Solutions:</h4>
+                <ol>
+                    <li><strong>Adjust Amperage</strong>:
+                        <ul>
+                            <li>Increase amperage to appropriate level</li>
+                            <li>Use minimum amperage recommended for electrode size</li>
+                            <li>Consider moving to smaller electrode if needed</li>
+                        </ul>
+                    </li>
+                    <li><strong>Improve Starting Technique</strong>:
+                        <ul>
+                            <li>Use quick scratch motion like striking a match</li>
+                            <li>Lift electrode immediately after contact</li>
+                            <li>Practice on scrap material</li>
+                        </ul>
+                    </li>
+                    <li><strong>When Electrode Sticks</strong>:
+                        <ul>
+                            <li>Release electrode immediately (don't pull)</li>
+                            <li>Turn off machine or short-circuit switch</li>
+                            <li>Twist electrode gently to break free</li>
+                            <li>Redeposit wasted electrode before continuing</li>
+                        </ul>
+                    </li>
+                    <li><strong>Electrode Handling</strong>:
+                        <ul>
+                            <li>Ensure electrodes are dry</li>
+                            <li>Store in appropriate conditions</li>
+                            <li>Try different electrode type if problems persist</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3 id="machine-problems">Welding Machine Problems</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Common Symptoms:</h4>
+                <ul>
+                    <li>Machine won't power on</li>
+                    <li>Inconsistent arc or amperage fluctuations</li>
+                    <li>Overheating</li>
+                    <li>Circuit breaker trips</li>
+                    <li>Poor arc performance despite proper technique</li>
+                </ul>
+            </div>
+            
+            <div class="problem-causes">
+                <h4>Power Supply Issues:</h4>
+                <ul>
+                    <li>Insufficient input power</li>
+                    <li>Improper voltage settings</li>
+                    <li>Loose connections</li>
+                    <li>Undersized extension cords</li>
+                    <li>Generator issues (if applicable)</li>
+                </ul>
+                
+                <h4>Machine Component Issues:</h4>
+                <ul>
+                    <li>Faulty control board</li>
+                    <li>Cooling fan failure</li>
+                    <li>Damaged internal components</li>
+                    <li>Dirty internal components</li>
+                </ul>
+                
+                <h4>Connection Issues:</h4>
+                <ul>
+                    <li>Loose welding cables</li>
+                    <li>Improper grounding</li>
+                    <li>Damaged electrode holder</li>
+                    <li>Poor work clamp connection</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>Power Supply Solutions:</h4>
+                <ul>
+                    <li>Verify input power meets machine requirements</li>
+                    <li>Check voltage settings on dual-voltage machines</li>
+                    <li>Use proper size extension cord (if needed)</li>
+                    <li>Ensure generator has sufficient capacity</li>
+                    <li>Avoid sharing circuits with other high-draw equipment</li>
+                </ul>
+                
+                <h4>Connection Solutions:</h4>
+                <ul>
+                    <li>Inspect and tighten all cable connections</li>
+                    <li>Clean work clamp contact area</li>
+                    <li>Check for cable damage or excessive wear</li>
+                    <li>Replace damaged electrode holders or work clamps</li>
+                </ul>
+                
+                <h4>Maintenance Solutions:</h4>
+                <ul>
+                    <li>Clean machine regularly with compressed air</li>
+                    <li>Check for blocked air vents</li>
+                    <li>Follow manufacturer's maintenance schedule</li>
+                    <li>Let machine cool if duty cycle is exceeded</li>
+                </ul>
+                
+                <h4>When to Seek Professional Service:</h4>
+                <ul>
+                    <li>Error codes displayed</li>
+                    <li>Burning smell from machine</li>
+                    <li>Visible internal damage</li>
+                    <li>Persistent problems after basic troubleshooting</li>
+                    <li>Electrical hazards (sparking, shocking)</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 id="advanced-troubleshooting">Advanced Troubleshooting Scenarios</h2>
+        
+        <h3 id="challenging-materials">Challenging Materials</h3>
+        
+        <div class="problem-section">
+            <h4>High-Carbon and Alloy Steels:</h4>
+            
+            <div class="problem-symptoms">
+                <p><strong>Common Issues:</strong></p>
+                <ul>
+                    <li>Cracking in heat-affected zone</li>
+                    <li>Excessive hardness</li>
+                    <li>Poor fusion</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Proper preheat (400-700°F depending on carbon content)</li>
+                    <li>Use low hydrogen electrodes (E7018, E8018)</li>
+                    <li>Maintain interpass temperature</li>
+                    <li>Slow post-weld cooling (cover with insulating blanket)</li>
+                    <li>Post-weld heat treatment when possible</li>
+                    <li>Multiple, smaller passes rather than single large beads</li>
+                </ul>
+            </div>
+            
+            <h4>Cast Iron:</h4>
+            
+            <div class="problem-symptoms">
+                <p><strong>Common Issues:</strong></p>
+                <ul>
+                    <li>Cracking during or after welding</li>
+                    <li>Hard, brittle welds that can't be machined</li>
+                    <li>Poor fusion at edges</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Proper preheat (500-1200°F depending on size and complexity)</li>
+                    <li>Use nickel electrodes (ENi-CI) for machinability</li>
+                    <li>Short, small stringer beads (no weaving)</li>
+                    <li>Peen each pass while still hot</li>
+                    <li>Very slow cooling after welding</li>
+                    <li>Use lowest practical amperage (30-40% less than steel)</li>
+                </ul>
+            </div>
+            
+            <h4>Stainless Steel:</h4>
+            
+            <div class="problem-symptoms">
+                <p><strong>Common Issues:</strong></p>
+                <ul>
+                    <li>Excessive distortion</li>
+                    <li>Sensitization (chromium carbide precipitation)</li>
+                    <li>Hot cracking</li>
+                    <li>Sugar (discoloration at heat-affected zone)</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Use lower heat input than carbon steel</li>
+                    <li>Select proper electrode (308L for 304, 316L for 316)</li>
+                    <li>Use stringer beads rather than weaves</li>
+                    <li>Control interpass temperature (under 300°F)</li>
+                    <li>Strong fixturing to control distortion</li>
+                    <li>Remove heat tint with stainless steel pickling paste</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3 id="positional-welding-issues">Positional Welding Challenges</h3>
+        
+        <div class="problem-section">
+            <h4>Vertical Welding Issues:</h4>
+            
+            <div class="problem-symptoms">
+                <p><strong>Common Issues:</strong></p>
+                <ul>
+                    <li>Molten metal sagging or running</li>
+                    <li>Poor bead formation</li>
+                    <li>Incomplete fusion at toes</li>
+                    <li>Difficult puddle control</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <p><strong>Solutions for Vertical-Up:</strong></p>
+                <ul>
+                    <li>Reduce amperage (70-85% of flat position)</li>
+                    <li>Use appropriate manipulation pattern:
+                        <ul>
+                            <li>Triangle/Christmas Tree pattern</li>
+                            <li>J-weave with pause at top</li>
+                            <li>Step and pause technique</li>
+                        </ul>
+                    </li>
+                    <li>Use smaller diameter electrode</li>
+                    <li>Focus on controlling the leading edge of the puddle</li>
+                    <li>Maintain tight arc length</li>
+                </ul>
+                
+                <p><strong>Solutions for Vertical-Down:</strong></p>
+                <ul>
+                    <li>Only suitable for thin materials</li>
+                    <li>Higher travel speed than vertical-up</li>
+                    <li>Focus on leading edge of puddle</li>
+                    <li>Maintain very short arc length</li>
+                    <li>Use 15-20° push angle</li>
+                </ul>
+            </div>
+            
+            <h4>Overhead Welding Issues:</h4>
+            
+            <div class="problem-symptoms">
+                <p><strong>Common Issues:</strong></p>
+                <ul>
+                    <li>Molten metal dropping</li>
+                    <li>Difficult arc control</li>
+                    <li>Excessive spatter</li>
+                    <li>Operator fatigue affecting quality</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <p><strong>Solutions:</strong></p>
+                <ul>
+                    <li>Reduce amperage (70-80% of flat position)</li>
+                    <li>Use smaller diameter electrode</li>
+                    <li>Keep weld pool small (maximum 3× electrode diameter)</li>
+                    <li>Use stringer beads or very tight weave</li>
+                    <li>Maintain shortest possible arc length</li>
+                    <li>Higher travel speed to keep puddle small</li>
+                    <li>Consider whip technique to control puddle</li>
+                    <li>Position body for maximum stability and comfort</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h3 id="root-pass-issues">Root Pass Challenges</h3>
+        
+        <div class="problem-section">
+            <div class="problem-symptoms">
+                <h4>Common Root Pass Issues:</h4>
+                <ul>
+                    <li>Incomplete penetration</li>
+                    <li>Excessive penetration (burn-through)</li>
+                    <li>Concave root surface</li>
+                    <li>Lack of fusion at root</li>
+                    <li>Root porosity</li>
+                </ul>
+            </div>
+            
+            <div class="problem-solutions">
+                <h4>For Open Root Joints:</h4>
+                <ul>
+                    <li><strong>Electrode Selection</strong>:
+                        <ul>
+                            <li>E6010 or E6011 for deep penetration</li>
+                            <li>3/32" or 1/8" diameter typical</li>
+                        </ul>
+                    </li>
+                    <li><strong>Key Technique Adjustments</strong>:
+                        <ul>
+                            <li>Maintain visible keyhole at leading edge of puddle</li>
+                            <li>Keyhole should be approximately 2/3 electrode diameter size</li>
+                            <li>Rock or weave slightly to ensure side wall fusion</li>
+                            <li>Monitor puddle carefully for signs of burn-through</li>
+                            <li>Adjust travel speed to control keyhole size</li>
+                        </ul>
+                    </li>
+                    <li><strong>For Excessive Penetration/Burn-Through</strong>:
+                        <ul>
+                            <li>Reduce amperage</li>
+                            <li>Increase travel speed</li>
+                            <li>Use tighter root gap</li>
+                            <li>Consider using landing/root face</li>
+                        </ul>
+                    </li>
+                    <li><strong>For Incomplete Penetration</strong>:
+                        <ul>
+                            <li>Increase amperage</li>
+                            <li>Slow travel speed</li>
+                            <li>Ensure proper root gap (typically 1/16" to 3/32")</li>
+                            <li>Reduce root face thickness</li>
+                            <li>Focus arc on root</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h4>For Joints with Backing:</h4>
+                <ul>
+                    <li>Ensure backing is clean and properly fitted</li>
+                    <li>Control heat input to prevent excessive melt-through</li>
+                    <li>Focus arc at the junction of joint and backing</li>
+                    <li>Use consistent travel speed</li>
+                    <li>E7018 can be used as alternative to E6010/E6011</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="cta-box">
+            <h3>Apply Your Troubleshooting Knowledge</h3>
+            <p>Now that you know how to identify and solve common welding problems, improve your skills with our structured practice guide:</p>
+            <div class="cta-buttons">
+                <a href="practice.html" class="btn primary-btn">Practice Guide</a>
+                <a href="safety.html" class="btn secondary-btn">Safety Guidelines</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>StickWeld<span>Pro</span></h3>
+                <p>Your comprehensive stick welding resource</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="electrodes.html">Electrodes</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="practice.html">Practice Guide</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for future updates and additional resources.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StickWeldPro. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

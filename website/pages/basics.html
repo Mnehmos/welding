@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Welding Basics - StickWeldPro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/tab-indicator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>StickWeld<span>Pro</span></h1>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html" class="active">Basics</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="electrodes.html">Electrodes</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                    <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="practice.html">Practice Guide</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <h1>Stick Welding Basics</h1>
+        <ul class="breadcrumbs">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="basics.html">Basics</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="table-of-contents">
+            <h3>Table of Contents</h3>
+            <!-- JS will populate this -->
+        </div>
+
+        <h2 id="introduction">Introduction to Stick Welding</h2>
+        <p>Stick welding, technically known as Shielded Metal Arc Welding (SMAW), is one of the oldest and most versatile welding processes. It was developed in the early 1900s and continues to be widely used across industries from construction to manufacturing, repair work, and field applications.</p>
+        
+        <div class="diagram-container">
+            <img src="../images/placeholder-stick-process.jpg" alt="Stick Welding Process Diagram">
+            <figcaption>Basic stick welding process showing arc, electrode, and workpiece</figcaption>
+        </div>
+        
+        <h3 id="how-it-works">How Stick Welding Works</h3>
+        <p>The process uses a fixed-length electrode with a flux coating to lay the weld. When the arc is struck between the electrode and the workpiece:</p>
+        
+        <ol>
+            <li>The intense heat (5,000-7,000°F) melts both the electrode and the base metal</li>
+            <li>The flux coating burns to create a gas shield that protects the weld from atmospheric contamination</li>
+            <li>The flux forms slag that protects the cooling weld from oxidation</li>
+            <li>The metal core of the electrode becomes the filler material for the weld joint</li>
+        </ol>
+        
+        <h3 id="key-components">Key Components in the SMAW Process</h3>
+        <ul>
+            <li><strong>Power Source</strong>: AC or DC welding machine</li>
+            <li><strong>Electrode Holder (Stinger)</strong>: Holds the welding electrode</li>
+            <li><strong>Ground Clamp</strong>: Completes the electrical circuit</li>
+            <li><strong>Welding Electrode</strong>: Flux-coated metal rod</li>
+        </ul>
+        
+        <h3 id="advantages">Advantages of Stick Welding</h3>
+        <ul>
+            <li><strong>Versatility</strong>: Works on most common metals</li>
+            <li><strong>Portability</strong>: Equipment is relatively simple and mobile</li>
+            <li><strong>Environmental Adaptability</strong>: Can be used outdoors, in drafty conditions</li>
+            <li><strong>Material Flexibility</strong>: Can weld dirty or rusty materials</li>
+            <li><strong>Cost-Efficiency</strong>: Equipment is less expensive than other processes</li>
+            <li><strong>Accessibility</strong>: Can reach difficult joints and positions</li>
+        </ul>
+        
+        <h3 id="limitations">Limitations of Stick Welding</h3>
+        <ul>
+            <li><strong>Skill Requirement</strong>: Requires more practice to master than some other processes</li>
+            <li><strong>Stop-Start Nature</strong>: Fixed electrode length requires frequent changes</li>
+            <li><strong>Clean-Up</strong>: Slag removal is necessary</li>
+            <li><strong>Less Efficient</strong>: Lower deposition rates than some processes</li>
+            <li><strong>Thickness Limitations</strong>: Less effective on very thin materials (below 18 gauge)</li>
+        </ul>
+        
+        <div class="tip-box">
+            <p>Stick welding is ideal for field work and outdoor applications, repair and maintenance, structural steel fabrication, pipeline construction, and when welding through rust, dirt, or paint.</p>
+        </div>
+
+        <h2 id="equipment-setup">Equipment and Setup</h2>
+        
+        <h3 id="welding-machines">Welding Power Sources</h3>
+        <p>The power source is the heart of your welding setup. Different machines offer various features and capabilities:</p>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Machine Type</th>
+                        <th>Characteristics</th>
+                        <th>Best For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Transformer</td>
+                        <td>AC output, heaviest, most durable</td>
+                        <td>Workshop settings, basic welding</td>
+                    </tr>
+                    <tr>
+                        <td>Transformer-Rectifier</td>
+                        <td>DC output, heavy, durable</td>
+                        <td>Better control, quality welds</td>
+                    </tr>
+                    <tr>
+                        <td>Inverter</td>
+                        <td>AC or DC output, lightweight, portable</td>
+                        <td>Field work, precision, advanced features</td>
+                    </tr>
+                    <tr>
+                        <td>Engine-Driven</td>
+                        <td>Self-contained power, highly portable</td>
+                        <td>Remote locations without electricity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h4 id="power-selection">Power Source Selection Guide</h4>
+        
+        <p><strong>AC (Alternating Current):</strong></p>
+        <ul>
+            <li>Less expensive equipment</li>
+            <li>Works well with certain electrodes (6011, 6013, 7014, 7024)</li>
+            <li>Less prone to arc blow</li>
+            <li>Less effective on thin materials</li>
+        </ul>
+        
+        <p><strong>DC (Direct Current):</strong></p>
+        <ul>
+            <li>Better arc stability</li>
+            <li>Less spatter</li>
+            <li>Easier out-of-position welding</li>
+            <li>Better for thin materials</li>
+            <li>More electrode options</li>
+        </ul>
+        
+        <p><strong>DC Electrode Positive (DCEP/DC+):</strong></p>
+        <ul>
+            <li>Deeper penetration</li>
+            <li>Good for thick materials</li>
+            <li>Used with E6010, E7018, low hydrogen electrodes</li>
+        </ul>
+        
+        <p><strong>DC Electrode Negative (DCEN/DC-):</strong></p>
+        <ul>
+            <li>Lower penetration</li>
+            <li>Higher deposition rate</li>
+            <li>Used with E6012, E6013, and some surfacing electrodes</li>
+        </ul>
+        
+        <h3 id="secondary-equipment">Secondary Equipment</h3>
+        
+        <h4 id="essential-tools">Essential Tools</h4>
+        <ul>
+            <li><strong>Electrode Holder (Stinger)</strong>: 300-600 amp capacity</li>
+            <li><strong>Work Clamp (Ground)</strong>: Heavy-duty spring clamp</li>
+            <li><strong>Welding Leads</strong>: Flexible, insulated copper cable</li>
+            <li><strong>Chipping Hammer</strong>: For slag removal</li>
+            <li><strong>Wire Brush</strong>: For cleaning welds and materials</li>
+            <li><strong>Welding Pliers</strong>: For handling hot metal and electrodes</li>
+        </ul>
+        
+        <h4 id="workspace">Workspace Requirements</h4>
+        <ul>
+            <li><strong>Welding Table</strong>: Metal surface, preferably with clamps</li>
+            <li><strong>Fire Protection</strong>: Fire extinguisher, flame-resistant blankets</li>
+            <li><strong>Ventilation System</strong>: Fume extraction or good natural ventilation</li>
+            <li><strong>Power Supply</strong>: Appropriate outlets for power source</li>
+            <li><strong>Lighting</strong>: Good illumination of work area</li>
+        </ul>
+        
+        <h3 id="machine-setup">Machine Setup and Calibration</h3>
+        
+        <h4 id="setup-steps">Setting Up Your Machine</h4>
+        <ol>
+            <li><strong>Placement</strong>: Level surface, away from moisture</li>
+            <li><strong>Power Connection</strong>: Verify voltage requirements</li>
+            <li><strong>Cable Connections</strong>: Secure electrode holder and work clamp cables</li>
+            <li><strong>Polarity Setup</strong>: Select AC, DCEP, or DCEN based on electrode</li>
+            <li><strong>Amperage Selection</strong>: Based on electrode diameter and material thickness</li>
+        </ol>
+        
+        <h4 id="amperage-chart">Amperage Settings Guide</h4>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Electrode Diameter</th>
+                        <th>Amperage Range</th>
+                        <th>Typical Material Thickness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1/16" (1.6mm)</td>
+                        <td>20-40A</td>
+                        <td>24-16 gauge</td>
+                    </tr>
+                    <tr>
+                        <td>5/64" (2.0mm)</td>
+                        <td>25-60A</td>
+                        <td>16-12 gauge</td>
+                    </tr>
+                    <tr>
+                        <td>3/32" (2.4mm)</td>
+                        <td>40-90A</td>
+                        <td>1/16"-1/8"</td>
+                    </tr>
+                    <tr>
+                        <td>1/8" (3.2mm)</td>
+                        <td>75-140A</td>
+                        <td>1/8"-1/4"</td>
+                    </tr>
+                    <tr>
+                        <td>5/32" (4.0mm)</td>
+                        <td>110-190A</td>
+                        <td>1/4"-3/8"</td>
+                    </tr>
+                    <tr>
+                        <td>3/16" (4.8mm)</td>
+                        <td>140-240A</td>
+                        <td>3/8"-1/2"</td>
+                    </tr>
+                    <tr>
+                        <td>7/32" (5.6mm)</td>
+                        <td>190-300A</td>
+                        <td>1/2"-3/4"</td>
+                    </tr>
+                    <tr>
+                        <td>1/4" (6.4mm)</td>
+                        <td>250-400A</td>
+                        <td>3/4"+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note-box">
+            <p>These amperage ranges are guidelines. Always check the electrode manufacturer's recommendations for specific settings. Factors like joint design, position, and base metal can affect optimal amperage.</p>
+        </div>
+        
+        <h3 id="workpiece-preparation">Workpiece Preparation</h3>
+        
+        <h4 id="surface-preparation">Surface Preparation</h4>
+        <ul>
+            <li><strong>Cleaning</strong>: Remove paint, rust, oil, and contaminants</li>
+            <li><strong>Grinding</strong>: Create clean, bare metal at joint</li>
+            <li><strong>Beveling</strong>: For materials over 3/16" thick</li>
+            <li><strong>Fit-Up</strong>: Proper joint alignment and spacing</li>
+            <li><strong>Tacking</strong>: Secure pieces in position before full welding</li>
+        </ul>
+        
+        <h4 id="pre-weld-considerations">Pre-Weld Considerations</h4>
+        <ul>
+            <li><strong>Material Identification</strong>: Confirm metal type</li>
+            <li><strong>Thickness Measurement</strong>: Verify material thickness</li>
+            <li><strong>Position Planning</strong>: Determine optimal welding position</li>
+            <li><strong>Heat Management</strong>: Consider need for preheat or heat sinks</li>
+            <li><strong>Distortion Control</strong>: Plan for controlling warpage</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p>Always clean metal thoroughly before welding. Contaminants can cause porosity, inclusions, and other weld defects that compromise integrity.</p>
+        </div>
+
+        <h2 id="joint-types">Joint Types and Preparation</h2>
+        
+        <div class="diagram-container">
+            <img src="../images/placeholder-joint-types.jpg" alt="Basic Joint Types">
+            <figcaption>The five basic joint types used in welding</figcaption>
+        </div>
+        
+        <h3 id="butt-joint">Butt Joint</h3>
+        <p>A butt joint is formed when two pieces are aligned edge to edge. It's commonly used in flat stock, pressure vessels, and applications where a smooth transition is needed.</p>
+        
+        <h4>Preparation:</h4>
+        <ul>
+            <li>For material up to 1/8": Square edges, 1/16" gap</li>
+            <li>For material 1/8" to 3/8": Single V-groove, 60-75° included angle</li>
+            <li>For material over 3/8": Double V-groove</li>
+        </ul>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Ensure proper root gap</li>
+            <li>Full penetration on first pass</li>
+            <li>Build up with subsequent passes as needed</li>
+            <li>Watch for melt-through on thin material</li>
+        </ul>
+        
+        <h3 id="t-joint">T-Joint</h3>
+        <p>A T-joint is formed when one piece is positioned at a right angle to another, forming a T shape. It's commonly used in structural fabrication.</p>
+        
+        <h4>Preparation:</h4>
+        <ul>
+            <li>For thin material: No preparation needed</li>
+            <li>For thicker material: Bevel the edge of vertical piece</li>
+        </ul>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Position electrode to hit both pieces equally</li>
+            <li>Watch for proper fusion at the root</li>
+            <li>Use appropriate size fillet weld for the application</li>
+            <li>Multiple passes for thicker material</li>
+        </ul>
+        
+        <h3 id="lap-joint">Lap Joint</h3>
+        <p>A lap joint is formed when two pieces overlap each other. It's commonly used for sheet metal and structural applications where appearance is less important.</p>
+        
+        <h4>Preparation:</h4>
+        <ul>
+            <li>Clean both surfaces</li>
+            <li>Ensure tight fit with minimal gap</li>
+            <li>Secure with clamps or tack welds</li>
+        </ul>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Direct more heat to the thicker piece</li>
+            <li>Ensure fusion at the root of the joint</li>
+            <li>Watch for proper wetting action on both pieces</li>
+            <li>Appropriate fillet size for the application</li>
+        </ul>
+        
+        <h3 id="corner-joint">Corner Joint</h3>
+        <p>A corner joint is formed by joining two pieces at their edges to form an L-shape. It's commonly used for boxes, containers, and frames.</p>
+        
+        <h4>Preparation:</h4>
+        <ul>
+            <li>For thin material: No preparation needed</li>
+            <li>For thicker material: Bevel one or both pieces</li>
+        </ul>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Position to get proper fusion at the inside corner</li>
+            <li>Watch for burn-through on thin material</li>
+            <li>Ensure complete fusion at the root</li>
+            <li>Multiple passes for thicker material</li>
+        </ul>
+        
+        <h3 id="edge-joint">Edge Joint</h3>
+        <p>An edge joint is formed when the edges of two pieces are placed parallel to each other and joined. It's typically used for thin materials where strength requirements are low.</p>
+        
+        <h4>Preparation:</h4>
+        <ul>
+            <li>Square edges</li>
+            <li>Tight fit-up</li>
+            <li>Secure with clamps or tack welds</li>
+        </ul>
+        
+        <h4>Technique:</h4>
+        <ul>
+            <li>Typically used for thin materials</li>
+            <li>Control heat to prevent burn-through</li>
+            <li>Ensure fusion of both pieces</li>
+            <li>Watch for warpage</li>
+        </ul>
+
+        <h2 id="starting-welding">Basic Welding Procedure</h2>
+        
+        <h3 id="safety-first">Safety First</h3>
+        <p>Before beginning to weld, ensure you have all necessary safety equipment:</p>
+        <ul>
+            <li>Welding helmet with proper shade (typically #10-13 for stick welding)</li>
+            <li>Welding gloves</li>
+            <li>Flame-resistant clothing covering all skin</li>
+            <li>Safety glasses (to wear under helmet)</li>
+            <li>Proper footwear</li>
+            <li>Ventilation or respiratory protection as needed</li>
+        </ul>
+        
+        <div class="warning-box">
+            <p>Never start welding without proper eye protection. Arc flash can cause painful eye injuries that may not be immediately apparent.</p>
+        </div>
+        
+        <h3 id="starting-arc">Starting the Arc</h3>
+        
+        <p>There are two main methods for starting an arc:</p>
+        
+        <h4>Scratch Start Method:</h4>
+        <ol>
+            <li>Hold electrode at 20-30° angle to work surface</li>
+            <li>Lightly drag electrode tip across surface like striking a match</li>
+            <li>When arc initiates, establish proper arc length</li>
+            <li>Begin welding motion</li>
+        </ol>
+        
+        <h4>Tap Start Method:</h4>
+        <ol>
+            <li>Hold electrode perpendicular to work surface</li>
+            <li>Gently tap electrode on surface and immediately raise slightly</li>
+            <li>When arc initiates, establish proper arc length</li>
+            <li>Begin welding motion</li>
+        </ol>
+        
+        <div class="tip-box">
+            <p>Beginners often find the scratch start method easier to master. Whichever method you use, the key is to establish the arc quickly and maintain a consistent arc length.</p>
+        </div>
+        
+        <h3 id="maintaining-arc">Maintaining the Proper Arc</h3>
+        
+        <p>Once the arc is established, the key factors for good welds are:</p>
+        
+        <ul>
+            <li><strong>Arc Length</strong>: Maintain an arc length approximately equal to the diameter of the electrode's core</li>
+            <li><strong>Travel Speed</strong>: Move at a steady pace that creates a bead about 1.5-2 times the width of the electrode</li>
+            <li><strong>Electrode Angle</strong>: Typically 10-15° drag angle (electrode pointing back at the bead)</li>
+            <li><strong>Steady Hand</strong>: Maintain consistent motion without wavering</li>
+        </ul>
+        
+        <h3 id="ending-weld">Ending the Weld</h3>
+        
+        <p>Proper weld termination is critical to prevent crater cracks:</p>
+        
+        <ol>
+            <li>Slow down slightly at the end of the weld</li>
+            <li>Pause briefly to allow the crater to fill</li>
+            <li>Gradually lift the electrode to break the arc</li>
+            <li>Alternatively, use a "backstep" technique by quickly moving back over the weld an inch before breaking the arc</li>
+        </ol>
+        
+        <h3 id="slag-removal">Slag Removal and Inspection</h3>
+        
+        <ol>
+            <li>Allow the weld to cool slightly</li>
+            <li>Use a chipping hammer to remove slag by tapping, starting at the edges</li>
+            <li>Brush the weld clean with a wire brush</li>
+            <li>Inspect the weld for defects:</li>
+            <ul>
+                <li>Consistent width and height</li>
+                <li>Good tie-in at the edges</li>
+                <li>Even ripple pattern</li>
+                <li>No visible porosity, undercut, or overlap</li>
+            </ul>
+        </ol>
+        
+        <div class="note-box">
+            <p>Always wear safety glasses during slag removal. Chips can fly at high velocity and cause eye injuries.</p>
+        </div>
+
+        <h2 id="practice-exercises">Basic Practice Exercises</h2>
+        
+        <p>Start with these simple exercises to develop fundamental skills:</p>
+        
+        <h3 id="practice-pads">Pad Building</h3>
+        <p>This exercise helps develop consistent bead placement and overlap:</p>
+        <ol>
+            <li>Start with a flat piece of mild steel (at least 1/4" thick)</li>
+            <li>Run parallel stringer beads side by side</li>
+            <li>Clean each bead thoroughly before laying the next</li>
+            <li>Overlap each bead by approximately 1/3 to 1/2</li>
+            <li>Continue until you've covered the entire surface</li>
+            <li>For a challenge, add a second layer perpendicular to the first</li>
+        </ol>
+        
+        <h3 id="practice-positions">Position Practice</h3>
+        <p>Once comfortable with flat welding, practice in different positions:</p>
+        <ol>
+            <li>Flat (1G/1F) - easiest position</li>
+            <li>Horizontal (2G/2F) - weldment oriented vertically, weld horizontally</li>
+            <li>Vertical (3G/3F) - weld up or down a vertical joint</li>
+            <li>Overhead (4G/4F) - most difficult position</li>
+        </ol>
+        
+        <div class="tip-box">
+            <p>Master one position before moving to the next. Flat position is the foundation for all other positions.</p>
+        </div>
+        
+        <h3 id="practice-joints">Joint Type Practice</h3>
+        <p>Practice creating and welding the five basic joint types:</p>
+        <ol>
+            <li>Start with lap joints (easiest to fit up and weld)</li>
+            <li>Progress to T-joints</li>
+            <li>Practice butt joints with different root gaps</li>
+            <li>Try corner joints</li>
+            <li>Finally, work on edge joints (which can be challenging due to burn-through risk)</li>
+        </ol>
+        
+        <p>For a complete skill development program, visit our <a href="practice.html">Practice Guide</a> page.</p>
+
+        <div class="cta-box">
+            <h3>Ready to Learn Advanced Techniques?</h3>
+            <p>Now that you understand the basics, explore our in-depth guides on specific techniques:</p>
+            <div class="cta-buttons">
+                <a href="techniques.html" class="btn primary-btn">Welding Techniques</a>
+                <a href="electrodes.html" class="btn secondary-btn">Electrode Guide</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>StickWeld<span>Pro</span></h3>
+                <p>Your comprehensive stick welding resource</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="basics.html">Basics</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="electrodes.html">Electrodes</a></li>
+                    <li><a href="materials.html">Materials</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="troubleshooting.html">Troubleshooting</a></li>
+                    <li><a href="safety.html">Safety</a></li>
+                    <li><a href="practice.html">Practice Guide</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <p>Subscribe for future updates and additional resources.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 StickWeldPro. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

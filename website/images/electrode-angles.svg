@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white"/>
+  
+  <!-- Main Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">Proper Electrode Angles for Stick Welding</text>
+  
+  <!-- Work Angle Diagram -->
+  <g transform="translate(200, 180)">
+    <text x="0" y="-120" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Work Angle</text>
+    
+    <!-- Workpiece -->
+    <rect x="-100" y="0" width="200" height="10" fill="#b8b8b8" stroke="#444" stroke-width="1.5"/>
+    
+    <!-- Electrode -->
+    <line x1="0" y1="0" x2="0" y2="-80" stroke="#888" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- 90° Angle Indicator -->
+    <path d="M 0 -10 L 20 -10 A 20 20 0 0 0 20 -30" stroke="#444" stroke-width="1" fill="none" stroke-dasharray="2,2"/>
+    <text x="30" y="-20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">90°</text>
+    
+    <!-- Work Angle Label -->
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">T-Joint: 45° to both plates</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Butt Joint: 90° to surface</text>
+    
+    <!-- Annotations -->
+    <text x="-80" y="-50" font-family="Arial, sans-serif" font-size="14" text-anchor="end">Electrode</text>
+    <line x1="-80" y1="-55" x2="-10" y2="-60" stroke="#222" stroke-width="1" marker-end="url(#arrowhead)"/>
+    
+    <text x="80" y="25" font-family="Arial, sans-serif" font-size="14" text-anchor="start">Work Surface</text>
+    <line x1="80" y1="20" x2="40" y2="5" stroke="#222" stroke-width="1" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- Travel Angle - Drag -->
+  <g transform="translate(500, 130)">
+    <text x="0" y="-70" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Travel Angle (Drag)</text>
+    
+    <!-- Direction Arrow -->
+    <line x1="-120" y1="-30" x2="-70" y2="-30" stroke="#0066cc" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="-95" y="-40" font-family="Arial, sans-serif" font-size="12" fill="#0066cc" text-anchor="middle">Travel Direction</text>
+    
+    <!-- Workpiece -->
+    <rect x="-150" y="0" width="300" height="10" fill="#b8b8b8" stroke="#444" stroke-width="1.5"/>
+    
+    <!-- Electrode -->
+    <line x1="0" y1="0" x2="30" y2="-80" stroke="#888" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Angle Indicator -->
+    <path d="M 0 -10 L 30 -10 L 30 -50" stroke="#444" stroke-width="1" fill="none" stroke-dasharray="2,2"/>
+    <path d="M 15 -25 A 20 20 0 0 0 25 -15" stroke="#ff6600" stroke-width="1.5" fill="none"/>
+    <text x="40" y="-15" font-family="Arial, sans-serif" font-size="14" text-anchor="start" fill="#ff6600">5-15°</text>
+    
+    <!-- Drag Label -->
+    <text x="80" y="-40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#444">Drag Angle</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Electrode points back at the weld</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Provides deeper penetration</text>
+  </g>
+  
+  <!-- Travel Angle - Push -->
+  <g transform="translate(500, 270)">
+    <text x="0" y="-30" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" font-weight="bold">Travel Angle (Push)</text>
+    
+    <!-- Direction Arrow -->
+    <line x1="70" y1="-20" x2="120" y2="-20" stroke="#0066cc" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="95" y="-30" font-family="Arial, sans-serif" font-size="12" fill="#0066cc" text-anchor="middle">Travel Direction</text>
+    
+    <!-- Workpiece -->
+    <rect x="-150" y="0" width="300" height="10" fill="#b8b8b8" stroke="#444" stroke-width="1.5"/>
+    
+    <!-- Electrode -->
+    <line x1="0" y1="0" x2="-30" y2="-80" stroke="#888" stroke-width="8" stroke-linecap="round"/>
+    
+    <!-- Angle Indicator -->
+    <path d="M 0 -10 L -30 -10 L -30 -50" stroke="#444" stroke-width="1" fill="none" stroke-dasharray="2,2"/>
+    <path d="M -15 -25 A 20 20 0 0 1 -25 -15" stroke="#ff6600" stroke-width="1.5" fill="none"/>
+    <text x="-40" y="-15" font-family="Arial, sans-serif" font-size="14" text-anchor="end" fill="#ff6600">5-15°</text>
+    
+    <!-- Push Label -->
+    <text x="-80" y="-40" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#444">Push Angle</text>
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Electrode points ahead of the weld</text>
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Creates flatter, wider beads</text>
+  </g>
+  
+  <!-- Notes -->
+  <g transform="translate(150, 350)">
+    <rect x="0" y="0" width="500" height="30" fill="#f0f0f0" stroke="#888" stroke-width="1" rx="5" ry="5"/>
+    <text x="250" y="20" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">Note: For stick welding, drag technique (backhand) is most commonly used</text>
+  </g>
+  
+  <!-- Arrows Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#222"/>
+    </marker>
+  </defs>
+</svg>
