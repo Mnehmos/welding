@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f8f8"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Welding Motion Pattern Animations</text>
+  
+  <!-- Stringer Bead -->
+  <g id="stringer-pattern">
+    <text x="240" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Stringer Bead (Straight Line)</text>
+    
+    <!-- Base metal -->
+    <rect x="60" y="120" width="360" height="80" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Joint line -->
+    <line x1="240" y1="120" x2="240" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Electrode and holder -->
+    <g id="stringer-electrode">
+      <!-- Electrode holder -->
+      <rect x="230" y="90" width="20" height="30" rx="3" ry="3" fill="#c0392b" stroke="#7f8c8d" stroke-width="1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="-100,0; -80,0; -60,0; -40,0; -20,0; 0,0; 20,0; 40,0; 60,0; 80,0; 100,0"
+          dur="6s"
+          repeatCount="indefinite"/>
+      </rect>
+      
+      <!-- Electrode -->
+      <rect id="stringer-rod" x="235" y="120" width="10" height="20" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="-100,0; -80,0; -60,0; -40,0; -20,0; 0,0; 20,0; 40,0; 60,0; 80,0; 100,0"
+          dur="6s"
+          repeatCount="indefinite"/>
+      </rect>
+      <rect id="stringer-flux" x="235" y="120" width="10" height="15" fill="#e67e22" stroke="#7f8c8d" stroke-width="1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="-100,0; -80,0; -60,0; -40,0; -20,0; 0,0; 20,0; 40,0; 60,0; 80,0; 100,0"
+          dur="6s"
+          repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <!-- Arc -->
+    <circle id="stringer-arc" cx="240" cy="140" r="4" fill="#f1c40f">
+      <animate attributeName="r" values="3;5;4;5;3" dur="0.5s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="-100,0; -80,0; -60,0; -40,0; -20,0; 0,0; 20,0; 40,0; 60,0; 80,0; 100,0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Weld puddle -->
+    <ellipse id="stringer-puddle" cx="240" cy="140" rx="15" ry="8" fill="#d35400" opacity="0.8">
+      <animate attributeName="rx" values="13;15;14;15;13" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="7;8;7.5;8;7" dur="0.7s" repeatCount="indefinite"/>
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        values="-100,0; -80,0; -60,0; -40,0; -20,0; 0,0; 20,0; 40,0; 60,0; 80,0; 100,0"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </ellipse>
+    
+    <!-- Weld bead forming -->
+    <path id="stringer-bead" d="M 140,140 Q 150,138 160,140" stroke="#c0392b" stroke-width="2" fill="#d35400">
+      <animate attributeName="d" 
+        values="M 140,140 Q 150,138 160,140;
+                M 140,140 Q 160,137 180,140;
+                M 140,140 Q 170,136 200,140;
+                M 140,140 Q 180,135 220,140;
+                M 140,140 Q 190,134 240,140;
+                M 140,140 Q 200,133 260,140;
+                M 140,140 Q 210,132 280,140;
+                M 140,140 Q 220,131 300,140;
+                M 140,140 Q 230,130 320,140;
+                M 140,140 Q 240,129 340,140"
+        dur="6s"
+        repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Key points -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">
+      <text x="100" y="230" text-anchor="start">• Maintain straight line along joint</text>
+      <text x="100" y="250" text-anchor="start">• Keep steady travel speed</text>
+      <text x="100" y="270" text-anchor="start">• No side-to-side movement</text>
+      <text x="100" y="290" text-anchor="start">• Best for root passes and maximum penetration</text>
+    </g>
+  </g>
+  
+  <!-- Weave Pattern - C-Weave -->
+  <g id="c-weave-pattern" transform="translate(0, 240)">
+    <text x="240" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">C-Weave Pattern</text>
+    
+    <!-- Base metal -->
+    <rect x="60" y="120" width="360" height="80" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Joint line -->
+    <line x1="240" y1="120" x2="240" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Electrode motion animation -->
+    <g id="c-weave-electrode">
+      <!-- Motion path (invisible guide) -->
+      <path id="c-weave-motionPath" d="M 140,160 C 190,145 200,175 240,160 C 280,145 290,175 340,160" fill="none" stroke="none"/>
+      
+      <!-- Electrode holder -->
+      <rect width="20" height="30" rx="3" ry="3" fill="#c0392b" stroke="#7f8c8d" stroke-width="1">
+        <animateMotion
+          dur="7s"
+          repeatCount="indefinite"
+          path="M 140,160 C 190,145 200,175 240,160 C 280,145 290,175 340,160"
+          rotate="auto"/>
+      </rect>
+      
+      <!-- Electrode -->
+      <rect width="10" height="20" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="1" x="-5">
+        <animateMotion
+          dur="7s"
+          repeatCount="indefinite"
+          path="M 140,160 C 190,145 200,175 240,160 C 280,145 290,175 340,160"
+          rotate="auto"/>
+      </rect>
+      <rect width="10" height="15" fill="#e67e22" stroke="#7f8c8d" stroke-width="1" x="-5">
+        <animateMotion
+          dur="7s"
+          repeatCount="indefinite"
+          path="M 140,160 C 190,145 200,175 240,160 C 280,145 290,175 340,160"
+          rotate="auto"/>
+      </rect>
+    </g>
+    
+    <!-- Arc -->
+    <circle r="4" fill="#f1c40f">
+      <animate attributeName="r" values="3;5;4;5;3" dur="0.5s" repeatCount="indefinite"/>
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        path="M 140,160 C 190,145 200,175 240,160 C 280,145 290,175 340,160"
+        rotate="auto"/>
+    </circle>
+    
+    <!-- Weld puddle -->
+    <ellipse rx="15" ry="8" fill="#d35400" opacity="0.8">
+      <animate attributeName="rx" values="13;15;14;15;13" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="7;8;7.5;8;7" dur="0.7s" repeatCount="indefinite"/>
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        path="M 140,160 C 190,145 200,175 240,160 C 280,145 290,175 340,160"
+        rotate="auto"/>
+    </ellipse>
+    
+    <!-- Weld bead forming -->
+    <path d="M 140,160 C 190,145 200,175 240,160" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0">
+      <animate attributeName="opacity" values="0;0.3;0.6;1" dur="3.5s" repeatCount="1" fill="freeze"/>
+    </path>
+    <path d="M 240,160 C 280,145 290,175 340,160" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0.3;0.6;1" dur="7s" repeatCount="1" fill="freeze"/>
+    </path>
+    
+    <!-- Key points -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">
+      <text x="100" y="230" text-anchor="start">• Half-moon or C-shaped motion</text>
+      <text x="100" y="250" text-anchor="start">• Pause briefly at edges to ensure fusion</text>
+      <text x="100" y="270" text-anchor="start">• Good for vertical up welding</text>
+      <text x="100" y="290" text-anchor="start">• Creates wider beads with controlled heat input</text>
+    </g>
+  </g>
+  
+  <!-- Triangle (Christmas Tree) Weave -->
+  <g id="triangle-pattern" transform="translate(400, 0)">
+    <text x="200" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Triangle/Christmas Tree Pattern</text>
+    
+    <!-- Base metal -->
+    <rect x="20" y="120" width="360" height="80" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Joint line -->
+    <line x1="200" y1="120" x2="200" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Electrode motion animation -->
+    <g id="triangle-electrode">
+      <!-- Motion path (invisible guide) -->
+      <path id="triangle-motionPath" d="M 100,200 L 180,160 L 220,160 L 300,200 M 300,200 L 220,160 L 180,160 L 100,200" fill="none" stroke="none" opacity="0"/>
+      
+      <!-- Electrode holder -->
+      <rect width="20" height="30" rx="3" ry="3" fill="#c0392b" stroke="#7f8c8d" stroke-width="1">
+        <animateMotion
+          dur="6s"
+          repeatCount="indefinite"
+          path="M 100,200 L 180,160 L 220,160 L 300,200 L 220,160 L 180,160 Z"
+          rotate="auto"/>
+      </rect>
+      
+      <!-- Electrode -->
+      <rect width="10" height="20" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="1" x="-5">
+        <animateMotion
+          dur="6s"
+          repeatCount="indefinite"
+          path="M 100,200 L 180,160 L 220,160 L 300,200 L 220,160 L 180,160 Z"
+          rotate="auto"/>
+      </rect>
+      <rect width="10" height="15" fill="#e67e22" stroke="#7f8c8d" stroke-width="1" x="-5">
+        <animateMotion
+          dur="6s"
+          repeatCount="indefinite"
+          path="M 100,200 L 180,160 L 220,160 L 300,200 L 220,160 L 180,160 Z"
+          rotate="auto"/>
+      </rect>
+    </g>
+    
+    <!-- Arc -->
+    <circle r="4" fill="#f1c40f">
+      <animate attributeName="r" values="3;5;4;5;3" dur="0.5s" repeatCount="indefinite"/>
+      <animateMotion
+        dur="6s"
+        repeatCount="indefinite"
+        path="M 100,200 L 180,160 L 220,160 L 300,200 L 220,160 L 180,160 Z"
+        rotate="auto"/>
+    </circle>
+    
+    <!-- Weld puddle -->
+    <ellipse rx="15" ry="8" fill="#d35400" opacity="0.8">
+      <animate attributeName="rx" values="13;15;14;15;13" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="7;8;7.5;8;7" dur="0.7s" repeatCount="indefinite"/>
+      <animateMotion
+        dur="6s"
+        repeatCount="indefinite"
+        path="M 100,200 L 180,160 L 220,160 L 300,200 L 220,160 L 180,160 Z"
+        rotate="auto"/>
+    </ellipse>
+    
+    <!-- Weld bead forming -->
+    <path d="M 100,200 L 180,160 L 220,160 L 300,200" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0.2">
+      <animate attributeName="opacity" values="0.2;0.5;0.8;1" dur="6s" repeatCount="1" fill="freeze"/>
+    </path>
+    
+    <!-- Key points -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">
+      <text x="60" y="230" text-anchor="start">• Move up at 45° angles to the sides</text>
+      <text x="60" y="250" text-anchor="start">• Pause briefly at each edge</text>
+      <text x="60" y="270" text-anchor="start">• Perfect for vertical up welding</text>
+      <text x="60" y="290" text-anchor="start">• Controls puddle in vertical position</text>
+    </g>
+  </g>
+  
+  <!-- J-Weave Pattern -->
+  <g id="j-weave-pattern" transform="translate(400, 240)">
+    <text x="200" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">J-Weave Pattern</text>
+    
+    <!-- Base metal -->
+    <rect x="20" y="120" width="360" height="80" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Joint line -->
+    <line x1="200" y1="120" x2="200" y2="200" stroke="#2c3e50" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Electrode motion animation -->
+    <g id="j-weave-electrode">
+      <!-- Motion path (invisible guide) -->
+      <path id="j-motionPath" d="M 100,185 Q 150,170 170,190 Q 170,160 200,160 Q 230,160 230,190 Q 250,170 300,185" fill="none" stroke="none"/>
+      
+      <!-- Electrode holder -->
+      <rect width="20" height="30" rx="3" ry="3" fill="#c0392b" stroke="#7f8c8d" stroke-width="1">
+        <animateMotion
+          dur="8s"
+          repeatCount="indefinite"
+          path="M 100,185 Q 150,170 170,190 Q 170,160 200,160 Q 230,160 230,190 Q 250,170 300,185"
+          rotate="auto"/>
+      </rect>
+      
+      <!-- Electrode -->
+      <rect width="10" height="20" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="1" x="-5">
+        <animateMotion
+          dur="8s"
+          repeatCount="indefinite"
+          path="M 100,185 Q 150,170 170,190 Q 170,160 200,160 Q 230,160 230,190 Q 250,170 300,185"
+          rotate="auto"/>
+      </rect>
+      <rect width="10" height="15" fill="#e67e22" stroke="#7f8c8d" stroke-width="1" x="-5">
+        <animateMotion
+          dur="8s"
+          repeatCount="indefinite"
+          path="M 100,185 Q 150,170 170,190 Q 170,160 200,160 Q 230,160 230,190 Q 250,170 300,185"
+          rotate="auto"/>
+      </rect>
+    </g>
+    
+    <!-- Arc -->
+    <circle r="4" fill="#f1c40f">
+      <animate attributeName="r" values="3;5;4;5;3" dur="0.5s" repeatCount="indefinite"/>
+      <animateMotion
+        dur="8s"
+        repeatCount="indefinite"
+        path="M 100,185 Q 150,170 170,190 Q 170,160 200,160 Q 230,160 230,190 Q 250,170 300,185"
+        rotate="auto"/>
+    </circle>
+    
+    <!-- Weld puddle -->
+    <ellipse rx="15" ry="8" fill="#d35400" opacity="0.8">
+      <animate attributeName="rx" values="13;15;14;15;13" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="7;8;7.5;8;7" dur="0.7s" repeatCount="indefinite"/>
+      <animateMotion
+        dur="8s"
+        repeatCount="indefinite"
+        path="M 100,185 Q 150,170 170,190 Q 170,160 200,160 Q 230,160 230,190 Q 250,170 300,185"
+        rotate="auto"/>
+    </ellipse>
+    
+    <!-- Weld bead forming -->
+    <path d="M 100,185 Q 150,170 170,190" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0">
+      <animate attributeName="opacity" values="0;0.8;1" dur="2s" repeatCount="1" fill="freeze"/>
+    </path>
+    <path d="M 170,190 Q 170,160 200,160" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0.8;1" dur="4s" repeatCount="1" fill="freeze"/>
+    </path>
+    <path d="M 200,160 Q 230,160 230,190" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0.8;1" dur="6s" repeatCount="1" fill="freeze"/>
+    </path>
+    <path d="M 230,190 Q 250,170 300,185" stroke="#c0392b" stroke-width="2" fill="#d35400" opacity="0">
+      <animate attributeName="opacity" values="0;0;0;0;0;0;0;0.8;1" dur="8s" repeatCount="1" fill="freeze"/>
+    </path>
+    
+    <!-- Key points -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">
+      <text x="60" y="230" text-anchor="start">• J-shaped motion from side to center</text>
+      <text x="60" y="250" text-anchor="start">• Move up slightly with each pass</text>
+      <text x="60" y="270" text-anchor="start">• Excellent for vertical up welding</text>
+      <text x="60" y="290" text-anchor="start">• Better control over molten puddle than straight weaving</text>
+    </g>
+  </g>
+  
+  <!-- Technical notes -->
+  <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" opacity="0.8">
+    <text x="400" y="570" text-anchor="middle" font-style="italic">* Animations represent idealized motion patterns</text>
+    <text x="400" y="590" text-anchor="middle" font-style="italic">* Adjust speed and width of patterns based on material thickness and position</text>
+  </g>
+</svg>
