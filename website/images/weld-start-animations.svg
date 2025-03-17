@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f8f8"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">Weld Starting Techniques</text>
+  
+  <!-- Scratch Start Method -->
+  <g id="scratch-start">
+    <text x="200" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Scratch Start Method</text>
+    
+    <!-- Base metal -->
+    <rect x="50" y="200" width="300" height="30" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Electrode and holder -->
+    <g id="scratch-electrode">
+      <!-- Electrode holder -->
+      <rect x="180" y="100" width="40" height="25" rx="5" ry="5" fill="#c0392b" stroke="#7f8c8d" stroke-width="2"/>
+      
+      <!-- Electrode -->
+      <rect id="scratch-rod" x="195" y="125" width="10" height="60" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; -80,60; -40,75; 40,75; 80,60"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </rect>
+      <rect id="scratch-flux" x="195" y="125" width="10" height="40" fill="#e67e22" stroke="#7f8c8d" stroke-width="1">
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; -80,60; -40,75; 40,75; 80,60"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <!-- Arc and sparks (visible during specific animation frames) -->
+    <g id="scratch-arc" opacity="0">
+      <circle cx="155" cy="200" r="5" fill="#f1c40f">
+        <animate attributeName="r" values="3;5;4;6;3" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;1;0" dur="4s" repeatCount="indefinite" 
+          begin="1.5s"/>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 40,0; 80,0"
+          dur="2s"
+          begin="1.5s"
+          repeatCount="indefinite"/>
+      </circle>
+      <path d="M 155,195 Q 165,190 170,195" stroke="#f39c12" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" values="M 155,195 Q 165,190 170,195; M 155,195 Q 160,188 170,195; M 155,195 Q 167,192 170,195" 
+          dur="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;1;0" dur="4s" repeatCount="indefinite" 
+          begin="1.5s"/>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 40,0; 80,0"
+          dur="2s"
+          begin="1.5s"
+          repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Weld bead forming -->
+    <g id="scratch-bead">
+      <path d="M 155,200 Q 160,195 165,200" fill="#d35400" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1" dur="4s" repeatCount="indefinite" 
+          begin="1.8s"/>
+        <animate attributeName="d" values="M 155,200 Q 160,195 165,200; M 155,200 Q 170,190 185,200; M 155,200 Q 180,185 195,200; M 155,200 Q 190,180 215,200; M 155,200 Q 200,175 235,200" 
+          dur="2.2s" begin="1.8s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Instructions -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">
+      <text x="60" y="260" text-anchor="start">1. Hold electrode at an angle</text>
+      <text x="60" y="280" text-anchor="start">2. Drag tip across surface like striking a match</text>
+      <text x="60" y="300" text-anchor="start">3. When arc initiates, establish correct arc length</text>
+      <text x="60" y="320" text-anchor="start">4. Begin welding motion</text>
+    </g>
+  </g>
+  
+  <!-- Tap Start Method -->
+  <g id="tap-start">
+    <text x="600" y="80" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Tap Start Method</text>
+    
+    <!-- Base metal -->
+    <rect x="450" y="200" width="300" height="30" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+    
+    <!-- Electrode and holder -->
+    <g id="tap-electrode">
+      <!-- Electrode holder -->
+      <rect x="600" y="100" width="40" height="25" rx="5" ry="5" fill="#c0392b" stroke="#7f8c8d" stroke-width="2"/>
+      
+      <!-- Electrode -->
+      <rect id="tap-rod" x="615" y="125" width="10" height="60" fill="#bdc3c7" stroke="#7f8c8d" stroke-width="1">
+        <animate 
+          attributeName="height" 
+          values="60;75;60;60" 
+          dur="4s" 
+          repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,15; 0,0; 0,0"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </rect>
+      <rect id="tap-flux" x="615" y="125" width="10" height="40" fill="#e67e22" stroke="#7f8c8d" stroke-width="1">
+        <animate 
+          attributeName="height" 
+          values="40;55;40;40" 
+          dur="4s" 
+          repeatCount="indefinite"/>
+        <animateTransform
+          attributeName="transform"
+          type="translate"
+          values="0,0; 0,15; 0,0; 0,0"
+          dur="4s"
+          repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <!-- Arc and sparks (visible during specific animation frames) -->
+    <g id="tap-arc" opacity="0">
+      <circle cx="620" cy="200" r="5" fill="#f1c40f">
+        <animate attributeName="r" values="3;5;4;6;3" dur="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;1;0;0" dur="4s" repeatCount="indefinite" 
+          begin="1s"/>
+      </circle>
+      <path d="M 615,195 Q 625,190 630,195" stroke="#f39c12" stroke-width="2" stroke-linecap="round">
+        <animate attributeName="d" values="M 615,195 Q 625,190 630,195; M 615,195 Q 620,188 630,195; M 615,195 Q 627,192 630,195" 
+          dur="0.3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;1;0;0" dur="4s" repeatCount="indefinite" 
+          begin="1s"/>
+      </path>
+    </g>
+    
+    <!-- Weld bead forming -->
+    <g id="tap-bead">
+      <path d="M 615,200 Q 620,195 625,200" fill="#d35400" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.8;1" dur="4s" repeatCount="indefinite" 
+          begin="1.2s"/>
+        <animate attributeName="d" values="M 615,200 Q 620,195 625,200; M 615,200 Q 625,190 635,200" 
+          dur="2.8s" begin="1.2s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    
+    <!-- Instructions -->
+    <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50">
+      <text x="460" y="260" text-anchor="start">1. Hold electrode perpendicular to surface</text>
+      <text x="460" y="280" text-anchor="start">2. Gently tap electrode tip on surface</text>
+      <text x="460" y="300" text-anchor="start">3. Quickly raise slightly when arc initiates</text>
+      <text x="460" y="320" text-anchor="start">4. Maintain proper arc length and begin welding</text>
+    </g>
+  </g>
+  
+  <!-- Key visualization elements -->
+  <g font-family="Arial, sans-serif" font-size="14" fill="#2c3e50" opacity="0.8">
+    <text x="400" y="360" text-anchor="middle" font-style="italic">* Animations loop continuously to demonstrate techniques</text>
+    <text x="400" y="380" text-anchor="middle" font-style="italic">* In practice, arc initiation happens more quickly than shown</text>
+  </g>
+</svg>
