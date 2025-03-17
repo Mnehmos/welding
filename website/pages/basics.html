@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/tab-indicator.css">
+    <link rel="stylesheet" href="../css/floating-toc.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
 </head>
@@ -50,7 +51,7 @@
         <p>Stick welding, technically known as Shielded Metal Arc Welding (SMAW), is one of the oldest and most versatile welding processes. It was developed in the early 1900s and continues to be widely used across industries from construction to manufacturing, repair work, and field applications.</p>
         
         <div class="diagram-container">
-            <img src="../images/placeholder-stick-process.jpg" alt="Stick Welding Process Diagram">
+            <object id="stick-welding-process" data="../images/stick-welding-process.svg" type="image/svg+xml" width="800" height="500">Basic stick welding process animation</object>
             <figcaption>Basic stick welding process showing arc, electrode, and workpiece</figcaption>
         </div>
         
@@ -286,7 +287,7 @@
         <h2 id="joint-types">Joint Types and Preparation</h2>
         
         <div class="diagram-container">
-            <img src="../images/placeholder-joint-types.jpg" alt="Basic Joint Types">
+            <object id="joint-types" data="../images/joint-types.svg" type="image/svg+xml" width="800" height="600">Basic joint types used in welding</object>
             <figcaption>The five basic joint types used in welding</figcaption>
         </div>
         
@@ -399,6 +400,11 @@
         
         <p>There are two main methods for starting an arc:</p>
         
+        <div class="diagram-container">
+            <object id="weld-start-techniques" data="../images/weld-start-animations.svg" type="image/svg+xml" width="800" height="400">Weld starting techniques animation</object>
+            <figcaption>Comparison of Scratch Start (left) and Tap Start (right) methods</figcaption>
+        </div>
+        
         <h4>Scratch Start Method:</h4>
         <ol>
             <li>Hold electrode at 20-30° angle to work surface</li>
@@ -499,6 +505,14 @@
         </ol>
         
         <p>For a complete skill development program, visit our <a href="practice.html">Practice Guide</a> page.</p>
+        
+        <h3 id="basic-motion-patterns">Basic Motion Patterns</h3>
+        <p>Different welding situations require different electrode movement patterns:</p>
+        
+        <div class="diagram-container">
+            <object id="welding-motions" data="../images/welding-motion-animations.svg" type="image/svg+xml" width="800" height="600">Welding motion pattern animations</object>
+            <figcaption>Common welding motion patterns and their applications</figcaption>
+        </div>
 
         <div class="cta-box">
             <h3>Ready to Learn Advanced Techniques?</h3>
@@ -556,5 +570,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/floating-toc.js"></script>
 </body>
 </html>
