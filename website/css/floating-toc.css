@@ -1,0 +1,160 @@
+/* Floating Table of Contents Styles */
+
+.floating-toc {
+    position: fixed;
+    top: 100px;
+    right: -300px;
+    width: 280px;
+    max-height: calc(100vh - 150px);
+    background-color: rgba(255, 255, 255, 0.97);
+    border-radius: 8px 0 0 8px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 99;
+    transition: right 0.3s ease-out;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #f1f1f1;
+}
+
+.floating-toc::-webkit-scrollbar {
+    width: 6px;
+}
+
+.floating-toc::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.floating-toc::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.floating-toc.visible {
+    right: 0;
+}
+
+.toc-toggle {
+    position: fixed;
+    top: 120px;
+    right: 0;
+    background-color: var(--primary-color);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    transition: right 0.3s ease-out;
+}
+
+.toc-toggle:hover {
+    background-color: var(--secondary-color);
+}
+
+.toc-toggle.active {
+    right: 280px;
+}
+
+.floating-toc h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.floating-toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-toc li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.floating-toc li a {
+    display: block;
+    padding: 5px 5px 5px 15px;
+    border-left: 2px solid transparent;
+    transition: all 0.2s ease;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.floating-toc li a:hover {
+    color: var(--primary-color);
+    border-left-color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.03);
+    padding-left: 18px;
+}
+
+.floating-toc li a.active {
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.floating-toc li.toc-h3 a {
+    padding-left: 25px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.floating-toc li.toc-h3 a:hover {
+    padding-left: 28px;
+}
+
+.floating-toc li.toc-h3 a.active {
+    color: var(--primary-color);
+}
+
+/* Progress indicator for the current section */
+.floating-toc li a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--secondary-color);
+}
+
+/* Hide TOC on smaller screens */
+@media (max-width: 1200px) {
+    .toc-toggle {
+        width: 36px;
+        height: 36px;
+        font-size: 0.9rem;
+    }
+    
+    .floating-toc {
+        width: 250px;
+    }
+    
+    .toc-toggle.active {
+        right: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .toc-toggle {
+        display: none;
+    }
+    
+    .floating-toc {
+        display: none;
+    }
+}
